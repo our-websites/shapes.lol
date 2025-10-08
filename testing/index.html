@@ -244,20 +244,20 @@
     <script>
         const User = document.getElementById('users');
         const Server = document.getElementById('servers');
-        const UserURL = "https://bot.shapes.lol/user-count";
-        const ServerURL = "https://bot.shapes.lol/server-count";
+        const UserURL = 'https://bot.shapes.lol/user-count';
+        const ServerURL = 'https://bot.shapes.lol/server-count';
 
         async function GetUserCount() {
             try {
-                const response = await fetch(UserURL, {mode: "cors"}); // Fetch the JSON data
+                const response = await fetch(UserURL); // Fetch the JSON data
                 if (!response.ok) {
                     User.innerHTML = '<strong>Offline</strong>';
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 const UserCount = await response.text(); // Parse the JSON response
-
                 // Set the Text To The Response
                 User.innerHTML = `<strong>${UserCount}</strong>`;
+                return UserCount
             } catch (error) {
                 console.error('Error fetching or processing data:', error);
                 User.innerHTML = `<strong>Unknown: ${error}</strong>`;
@@ -265,7 +265,7 @@
         }
         async function GetServerCount() {
             try {
-                const response = await fetch(ServerURL, {mode: "no-cors"}); // Fetch the JSON data
+                const response = await fetch(ServerURL, {mode:"no-cors"}); // Fetch the JSON data
                 if (!response.ok) {
                     Server.innerHTML = '<strong>Offline</strong>'
                     throw new Error(`HTTP error! Status: ${response.status}`);
@@ -273,9 +273,10 @@
                 const ServerCount = await response.text(); // Parse the JSON response
                 // Set the Text To The Response
                 Server.innerHTML = `<strong>${ServerCount}</strong>`;
+                return ServerCount
             } catch (error) {
                 console.error('Error fetching or processing data:', error);
-                Server.innerHTML = '<strong>Unknown</strong>';
+                Server.innerHTML = `<strong>Unknown: ${error}</strong>`;
             }
         }
         // GetUserCount();
@@ -283,7 +284,7 @@
         while (true) {
             GetUserCount();
             GetServerCount();
-            sleep(10000);
+            sleep(10);
         }
     </script>
 </body>
