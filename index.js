@@ -23,10 +23,11 @@ async function GetServerCount() {
             Server.innerHTML = "<strong>Offline</strong>";
             throw new Error(`HTTP error! status: ${response.status}`);
         } else {
-            Server.innerHTML = `<strong>${response.body()}</strong>`;
+            Server.innerHTML = `<strong>${response.text()}</strong>`; // Set the Text To The Response
+            // const ServerCount = await response.text(); // Parse the response
         }
-        const ServerCount = await response.text(); // Parse the response
-        // Set the Text To The Response
+        
+        
         
     } catch (error) {
         console.error("Error fetching or processing data:", error);
