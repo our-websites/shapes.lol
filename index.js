@@ -23,7 +23,7 @@ async function GetServerCount() {
             Server.innerHTML = "<strong>Offline</strong>";
             throw new Error(`HTTP error! status: ${response.status}`);
         } else {
-            Server.innerHTML = `<strong>${response.body}</strong>`;
+            Server.innerHTML = `<strong>${response.body()}</strong>`;
         }
         const ServerCount = await response.text(); // Parse the response
         // Set the Text To The Response
