@@ -37,5 +37,5 @@ async function GetServerCount() {
 while (true) {
     GetUserCount();
     GetServerCount();
-    sleep(10000);
+    sleep(9000);
 }
