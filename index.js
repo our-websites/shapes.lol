@@ -14,7 +14,7 @@ async function GetUserCount() {
         User.innerHTML = `<strong>${UserCount["user_count"]}</strong>`;
     } catch (error) {
         console.error("Error fetching or processing data:", error);
-        User.innerHTML = "<strong>Unknown</strong>";
+        User.innerHTML = `<strong>ERROR: ${error}</strong>`;
     }
 }
 async function GetServerCount() {
@@ -29,7 +29,7 @@ async function GetServerCount() {
         Server.innerHTML = `<strong>${ServerCount["server_count"]}</strong>`;
     } catch (error) {
         console.error("Error fetching or processing data:", error);
-        Server.innerHTML = "<strong>Unknown</strong>";
+        Server.innerHTML = `<strong>ERROR: ${error}</strong>`;
     }
 }
 // GetUserCount();
