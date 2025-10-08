@@ -249,7 +249,7 @@
 
         async function GetUserCount() {
             try {
-                const response = await fetch(UserURL, {mode: "no-cors"}); // Fetch the JSON data
+                const response = await fetch(UserURL, {mode: "cors"}); // Fetch the JSON data
                 if (!response.ok) {
                     User.innerHTML = '<strong>Offline</strong>';
                     throw new Error(`HTTP error! Status: ${response.status}`);
