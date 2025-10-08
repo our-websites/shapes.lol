@@ -8,10 +8,10 @@ async function GetUserCount() {
             User.innerHTML = "<strong>Offline</strong>";
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const UserCount = await response.json(); // Parse the JSON response
+        const UserCount = await response.text(); // Parse the JSON response
 
         // Set the Text To The Response
-        User.innerHTML = `<strong>${UserCount["user_count"]}</strong>`;
+        User.innerHTML = `<strong>${UserCount}</strong>`;
     } catch (error) {
         console.error("Error fetching or processing data:", error);
         User.innerHTML = `ERROR: ${error}`;
@@ -24,9 +24,9 @@ async function GetServerCount() {
             Server.innerHTML = "<strong>Offline</strong>";
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const ServerCount = await response.json(); // Parse the JSON response
+        const ServerCount = await response.text(); // Parse the JSON response
         // Set the Text To The Response
-        Server.innerHTML = `<strong>${ServerCount["server_count"]}</strong>`;
+        Server.innerHTML = `<strong>${ServerCount}</strong>`;
     } catch (error) {
         console.error("Error fetching or processing data:", error);
         Server.innerHTML = `ERROR: ${error}`;
