@@ -3,13 +3,12 @@ const Server = document.getElementById("servers");
 
 async function GetUserCount() {
     try {
-        const response = await fetch("https://bot.shapes.lol/user-count"); // Fetch the JSON data
+        const response = await fetch("https://bot.shapes.lol/user-count"); // Fetch the data
         if (!response.ok) {
             User.innerHTML = "<strong>Offline</strong>";
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const UserCount = await response.text(); // Parse the JSON response
-
+        const UserCount = await response.text(); // Parse the response
         // Set the Text To The Response
         User.innerHTML = `<strong>${UserCount}</strong>`;
     } catch (error) {
@@ -19,12 +18,12 @@ async function GetUserCount() {
 }
 async function GetServerCount() {
     try {
-        const response = await fetch("https://bot.shapes.lol/server-count"); // Fetch the JSON data
+        const response = await fetch("https://bot.shapes.lol/server-count"); // Fetch the data
         if (!response.ok) {
             Server.innerHTML = "<strong>Offline</strong>";
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const ServerCount = await response.text(); // Parse the JSON response
+        const ServerCount = await response.text(); // Parse the response
         // Set the Text To The Response
         Server.innerHTML = `<strong>${ServerCount}</strong>`;
     } catch (error) {
@@ -32,8 +31,9 @@ async function GetServerCount() {
         Server.innerHTML = `ERROR: ${error}`;
     }
 }
-// GetUserCount();
-// GetServerCount();
+GetUserCount();
+GetServerCount();
+sleep(10)
 while (true) {
     GetUserCount();
     GetServerCount();
