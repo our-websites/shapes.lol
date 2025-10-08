@@ -244,10 +244,12 @@
     <script>
         const User = document.getElementById('users');
         const Server = document.getElementById('servers');
+        const UserURL = "https://bot.shapes.lol/user-count";
+        const ServerURL = "https://bot.shapes.lol/server-count"
 
         async function GetUserCount() {
             try {
-                const response = await fetch('https://bot.shapes.lol/user-count', {mode: "no-cors", headers: {'Content-Type': 'text/plain'}, method: 'GET'}); // Fetch the JSON data
+                const response = await fetch(UserURL, {mode: "no-cors"}); // Fetch the JSON data
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                     User.innerHTML = '<strong>Offline</strong>';
@@ -263,7 +265,7 @@
         }
         async function GetServerCount() {
             try {
-                const response = await fetch('https://bot.shapes.lol/server-count', {mode: "no-cors", headers: {'Content-Type': 'text/plain'}, method: 'GET'}); // Fetch the JSON data
+                const response = await fetch(ServerURL, {mode: "no-cors"}); // Fetch the JSON data
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                     Server.innerHTML = '<strong>Offline</strong>'
