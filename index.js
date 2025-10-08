@@ -22,10 +22,12 @@ async function GetServerCount() {
         if (!response.ok) {
             Server.innerHTML = "<strong>Offline</strong>";
             throw new Error(`HTTP error! status: ${response.status}`);
+        } else {
+            Server.innerHTML = `<strong>${response.body}</strong>`;
         }
         const ServerCount = await response.text(); // Parse the response
         // Set the Text To The Response
-        Server.innerHTML = `<strong>${ServerCount}</strong>`;
+        
     } catch (error) {
         console.error("Error fetching or processing data:", error);
         Server.innerHTML = `ERROR: ${error}`;
@@ -33,7 +35,7 @@ async function GetServerCount() {
 }
 GetUserCount();
 GetServerCount();
-sleep(10)
+sleep(1000)
 while (true) {
     GetUserCount();
     GetServerCount();
