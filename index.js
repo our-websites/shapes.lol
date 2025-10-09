@@ -2,7 +2,7 @@ const User = document.getElementById("users");
 const Server = document.getElementById("servers");
 
 async function GetUserCount() {
-    fetch("https://bot.shapes.lol/user-count") // Fetch the data
+    fetch("https://bot.shapes.lol/user-count", {mode: "no-cors"}) // Fetch the data
         .then((res) => {
             if(!res.ok) {
                 User.innerHTML = `<strong>Failed To Fetch</strong>`
@@ -16,8 +16,7 @@ async function GetUserCount() {
 
 async function GetCountTest() {
     try {
-        const res = await fetch("https://bot.shapes.lol/server-count");
-
+        const res = await fetch("https://bot.shapes.lol/server-count", {mode: "no-cors"});
         if(!res.ok){
             throw new Error("Failed To Fetch");
         }
