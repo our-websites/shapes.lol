@@ -252,21 +252,23 @@
         }
 
         async function GetUserCount() {
-            fetch("https://bot.shapes.lol/user-count", { mode: "no-cors" }) // Fetch the data
+            fetch("https://bot.shapes.lol/user-count") // Fetch the data
                 .then((res) => {
                     if (!res.ok) {
-                        User.innerHTML = `<strong>Failed To Fetch ${res.ok} ${res.text()}</strong>`
+                        User.innerHTML = `<strong>Failed To Fetch ${res.ok} ${res.status}</strong>`
                         throw new Error("Failed To Fetch");
                     }
                     return res.text();
                 })
-                .then((data) => User.innerHTML = `<strong>${data}</strong>`)
+                .then((data) => {
+	                User.innerHTML = `<strong>${data}</strong>`
+                )}
                 .catch((err) => console.error(err));
         }
 
         async function GetCountTest() {
             try {
-                const res = await fetch("https://bot.shapes.lol/server-count", { mode: "no-cors" });
+                const res = await fetch("https://bot.shapes.lol/server-count");
                 if (!res.ok) {
                     throw new Error("Failed To Fetch");
                 }
@@ -292,5 +294,4 @@
 
     </script>
 </body>
-
 </html>

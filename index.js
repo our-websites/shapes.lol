@@ -38,9 +38,9 @@ GetCountTest();
 GetUserCount();
 // GetServerCount();
 wait(5000);
-while (true) {
-    GetCountTest();
-    GetUserCount();
+//while (true) {
+    //GetCountTest();
+    //GetUserCount();
     //GetServerCount();
-    wait(10000);
+    //wait(10000);
 }
