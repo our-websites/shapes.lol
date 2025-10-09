@@ -9,7 +9,7 @@ async function GetUserCount() {
     fetch("https://bot.shapes.lol/user-count", { mode: "no-cors" }) // Fetch the data
         .then((res) => {
             if (!res.ok) {
-                User.innerHTML = `<strong>Failed To Fetch</strong>`
+                User.innerHTML = `<strong>Failed to fetch</strong>`
                 throw new Error("Failed To Fetch");
             }
             return res.text();
