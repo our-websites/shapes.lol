@@ -2,43 +2,42 @@ const User = document.getElementById("users");
 const Server = document.getElementById("servers");
 
 async function GetUserCount() {
+    fetch("https://bot.shapes.lol/user-count") // Fetch the data
+        .then((res) => {
+            if(!res.ok) {
+                User.innerHTML = `<strong>Failed To Fetch</strong>`
+                throw new Error("Failed To Fetch");
+            }
+            return res.text();
+        })
+        .then((data) => User.innerHTML = `<strong>${data}</strong>`)
+        .catch((err) => console.error(err));
+}
+
+async function GetCountTest() {
     try {
-        const response = await fetch("https://bot.shapes.lol/user-count"); // Fetch the data
-        if (!response.ok) {
-            User.innerHTML = "<strong>Offline</strong>";
-            throw new Error(`HTTP error! status: ${response.status}`);
+        const res = await fetch("https://bot.shapes.lol/server-count");
+
+        if(!res.ok){
+            throw new Error("Failed To Fetch");
         }
-        const UserCount = await response.text(); // Parse the response
-        // Set the Text To The Response
-        User.innerHTML = `<strong>${UserCount}</strong>`;
-    } catch (error) {
-        console.error("Error fetching or processing data:", error);
-        User.innerHTML = `ERROR: ${error}`;
+
+        const data = await res.text();
+        Server.innerHTML = `<strong>${data}</strong>`;
+        console.log(data);
+    }
+    catch(err){
+        console.error(err);
     }
 }
-async function GetServerCount() {
-    try {
-        const response = await fetch("https://bot.shapes.lol/server-count"); // Fetch the data
-        if (!response.ok) {
-            Server.innerHTML = "<strong>Offline</strong>";
-            throw new Error(`HTTP error! status: ${response.status}`);
-        } else {
-            Server.innerHTML = `<strong>${response.text()}</strong>`; // Set the Text To The Response
-            // const ServerCount = await response.text(); // Parse the response
-        }
-        
-        
-        
-    } catch (error) {
-        console.error("Error fetching or processing data:", error);
-        Server.innerHTML = `ERROR: ${error}`;
-    }
-}
+
+GetCountTest();
 GetUserCount();
-GetServerCount();
-sleep(1000)
+// GetServerCount();
+sleep(1000);
 while (true) {
+    GetCountTest();
     GetUserCount();
-    GetServerCount();
+    //GetServerCount();
     sleep(9000);
 }

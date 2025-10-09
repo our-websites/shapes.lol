@@ -208,84 +208,89 @@
 </head>
 
 <body>
-<header class="topbar">
-    <div class="brand-dot">
-    <img src="https://cdn.shapes.lol/shapes/logo.png" alt="Shapes Logo">
+    <header class="topbar">
+        <div class="brand-dot">
+            <img src="https://cdn.shapes.lol/shapes/logo.png" alt="Shapes Logo">
+        </div>
+    </header>
+
+    <div class="wrap">
+        <main class="hero">
+            <h1 class="headline">
+                Shapes is<br>
+                Discord's<br>
+                premier <span class="muted">all-</span><span class="muted">in-one</span> <span>bot</span>
+            </h1>
+
+            <p class="sub">
+                A versatile multipurpose bot designed to elevate your Discord server and DMs with powerful features and
+                intuitive user-focused commands.
+            </p>
+
+            <div class="stats">
+                serving <div id="users"><strong>10+</strong></div> users and <div id="servers"><strong>10+</strong>
+                </div> servers
+            </div>
+
+            <a href="https://discord.com/oauth2/authorize?client_id=1414465348434137098" class="button-style">
+                <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
+                <span>Add Bot</span>
+            </a>
+
+            <a href="https://shapes.lol/discord" target="_blank" class="button-style">
+                <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
+                <span>Support Server</span>
+            </a>
+        </main>
     </div>
-</header>
-
-<div class="wrap">
-    <main class="hero">
-    <h1 class="headline">
-        Shapes is<br>
-        Discord's<br>
-        premier <span class="muted">all-</span><span class="muted">in-one</span> <span>bot</span>
-    </h1>
-
-    <p class="sub">
-        A versatile multipurpose bot designed to elevate your Discord server and DMs with powerful features and intuitive user-focused commands.
-    </p>
-
-    <div class="stats">
-        serving <div id="users"><strong>10+</strong></div> users and <div id="servers"><strong>10+</strong></div> servers
-    </div>
-
-    <a href="https://discord.com/oauth2/authorize?client_id=1414465348434137098" class="button-style">
-        <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
-        <span>Add Bot</span>
-    </a>
-
-    <a href="https://shapes.lol/discord" target="_blank" class="button-style">
-        <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
-        <span>Support Server</span>
-    </a>
-    </main>
-</div>
     <script>
-        const User = document.getElementById('users');
-        const Server = document.getElementById('servers');
-        const UserURL = 'https://bot.shapes.lol/user-count';
-        const ServerURL = 'https://bot.shapes.lol/server-count';
+        const User = document.getElementById("users");
+        const Server = document.getElementById("servers");
+
+        Server.innerHTML = `<strong>Loading</strong>`
+        User.innerHTML = `<strong>Loading</strong>`
 
         async function GetUserCount() {
+            fetch("https://bot.shapes.lol/user-count") // Fetch the data
+                .then((res) => {
+                    if (!res.ok) {
+                        User.innerHTML = `<strong>Failed To Fetch</strong>`
+                        throw new Error("Failed To Fetch");
+                    }
+                    return res.text();
+                })
+                .then((data) => User.innerHTML = `<strong>${data}</strong>`)
+                .catch((err) => console.error(err));
+        }
+
+        async function GetCountTest() {
             try {
-                const response = await fetch(UserURL); // Fetch the JSON data
-                if (!response.ok) {
-                    User.innerHTML = '<strong>Offline</strong>';
-                    throw new Error(`HTTP error! Status: ${response.status}`);
+                const res = await fetch("https://bot.shapes.lol/server-count");
+
+                if (!res.ok) {
+                    throw new Error("Failed To Fetch");
                 }
-                const UserCount = await response.text(); // Parse the JSON response
-                // Set the Text To The Response
-                User.innerHTML = `<strong>${UserCount}</strong>`;
-                return UserCount
-            } catch (error) {
-                console.error('Error fetching or processing data:', error);
-                User.innerHTML = `<strong>Unknown: ${error}</strong>`;
+
+                const data = await res.text();
+                Server.innerHTML = `<strong>${data}</strong>`;
+                console.log(data);
+            }
+            catch (err) {
+                console.error(err);
             }
         }
-        async function GetServerCount() {
-            try {
-                const response = await fetch(ServerURL, {mode:"no-cors"}); // Fetch the JSON data
-                if (!response.ok) {
-                    Server.innerHTML = '<strong>Offline</strong>'
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                const ServerCount = await response.text(); // Parse the JSON response
-                // Set the Text To The Response
-                Server.innerHTML = `<strong>${ServerCount}</strong>`;
-                return ServerCount
-            } catch (error) {
-                console.error('Error fetching or processing data:', error);
-                Server.innerHTML = `<strong>Unknown: ${error}</strong>`;
-            }
-        }
-        // GetUserCount();
+
+        GetCountTest();
+        GetUserCount();
         // GetServerCount();
+        sleep(1000);
         while (true) {
+            GetCountTest();
             GetUserCount();
-            GetServerCount();
+            //GetServerCount();
             sleep(10);
         }
     </script>
 </body>
+
 </html>
