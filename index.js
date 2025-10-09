@@ -1,10 +1,14 @@
 const User = document.getElementById("users");
 const Server = document.getElementById("servers");
 
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function GetUserCount() {
-    fetch("https://bot.shapes.lol/user-count", {mode: "no-cors"}) // Fetch the data
+    fetch("https://bot.shapes.lol/user-count", { mode: "no-cors" }) // Fetch the data
         .then((res) => {
-            if(!res.ok) {
+            if (!res.ok) {
                 User.innerHTML = `<strong>Failed To Fetch</strong>`
                 throw new Error("Failed To Fetch");
             }
@@ -16,8 +20,8 @@ async function GetUserCount() {
 
 async function GetCountTest() {
     try {
-        const res = await fetch("https://bot.shapes.lol/server-count", {mode: "no-cors"});
-        if(!res.ok){
+        const res = await fetch("https://bot.shapes.lol/server-count", { mode: "no-cors" });
+        if (!res.ok) {
             throw new Error("Failed To Fetch");
         }
 
@@ -25,7 +29,7 @@ async function GetCountTest() {
         Server.innerHTML = `<strong>${data}</strong>`;
         console.log(data);
     }
-    catch(err){
+    catch (err) {
         console.error(err);
     }
 }
@@ -33,10 +37,10 @@ async function GetCountTest() {
 GetCountTest();
 GetUserCount();
 // GetServerCount();
-sleep(1000);
+wait(5000);
 while (true) {
     GetCountTest();
     GetUserCount();
     //GetServerCount();
-    sleep(9000);
+    wait(10000);
 }
