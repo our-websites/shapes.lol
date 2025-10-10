@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Fetch Example</title>
+</head>
+<body>
+    <div id="data-container">
+        <!-- Content fetched from JSON will be displayed here -->
+        Loading data...
+    </div>
+
+    <script>
+        // Assume you have a JSON file named 'data.json' in the same directory
+// with content like:
+// [
+//   { "id": 1, "name": "Item A", "description": "Description for A" },
+//   { "id": 2, "name": "Item B", "description": "Description for B" }
+// ]
+
+const dataContainer = document.getElementById('data-container');
+
+async function fetchDataAndDisplay() {
+    try {
+        const response = await fetch('test.json'); // Fetch the JSON data
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json(); // Parse the JSON response
+
+        // Clear the loading message
+        dataContainer.innerHTML = '';
+
+        // Iterate through the fetched data and create HTML elements
+        data.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('item-card'); // Optional: for styling
+
+            itemDiv.innerHTML = `
+                <h2>${item.name}</h2>
+                <p>${item.description}</p>
+            `;
+            dataContainer.appendChild(itemDiv);
+        });
+
+    } catch (error) {
+        console.error('Error fetching or processing data:', error);
+        dataContainer.innerHTML = '<p>Failed to load data.</p>';
+    }
+}
+
+fetchDataAndDisplay();
+    </script>
+</body>
+</html>

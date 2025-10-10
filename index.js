@@ -1,6 +1,17 @@
 const User = document.getElementById("users");
 const Server = document.getElementById("servers");
 
+User.innerHTML = `<strong>Loading.</strong>`
+Server.innerHTML = `<strong>Loading.</strong>`
+
+User.innerHTML = `<strong>Loading..</strong>`
+Server.innerHTML = `<strong>Loading..</strong>`
+
+
+User.innerHTML = `<strong>Loading...</strong>`
+Server.innerHTML = `<strong>Loading...</strong>`
+
+
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -24,8 +35,8 @@ async function GetUserCount() {
     try {
         const res = await fetch("https://bot.shapes.lol/user-count");
         if (!res.ok) {
-            User.innerHTML = `<strong>Unknown</strong>`;
-            throw new Error("Failed To Fetch");
+            //throw new Error("Failed To Fetch");
+            return
         }
 
         const data = await res.text();
@@ -33,8 +44,9 @@ async function GetUserCount() {
         console.log(data, "Users Use Shapes!");
     }
     catch (err) {
-        console.error(err);
-        Server.innerHTML = `<strong>${err}</strong>`;
+        User.innerHTML = `<strong>Unknown</strong>`;
+        //console.error(err);
+        //Server.innerHTML = `<strong>${err}</strong>`;
     }
 }
 
@@ -42,8 +54,8 @@ async function GetServerCount() {
     try {
         const res = await fetch("https://bot.shapes.lol/server-count");
         if (!res.ok) {
-            Server.innerHTML = `<strong>Unknown</strong>`;
-            throw new Error("Failed To Fetch");
+            //throw new Error("Failed To Fetch");
+            return
         }
 
         const data = await res.text();
@@ -51,18 +63,16 @@ async function GetServerCount() {
         console.log(data, "Servers Use Shapes!");
     }
     catch (err) {
-        console.error(err);
-        Server.innerHTML = `<strong>${err}</strong>`;
+        Server.innerHTML = `<strong>Unknown</strong>`;
+        //console.error(err);
+        //Server.innerHTML = `<strong>${err}</strong>`;
     }
 }
+
+console.log("This Website Is A WIP")
 
 GetServerCount();
 GetUserCount();
 
-// GetServerCount();
-//while (true) {
-//GetCountTest();
-//GetUserCount();
-//GetServerCount();
-//wait(5000);
-//}
+setInterval(GetServerCount, 10000)
+setInterval(GetUserCount, 10000);
