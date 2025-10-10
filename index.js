@@ -5,42 +5,64 @@ function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function GetUserCount() {
-    fetch("https://bot.shapes.lol/user-count", { mode: "no-cors" }) // Fetch the data
+async function GetUserCountOLD() {
+    fetch("https://bot.shapes.lol/user-count") // Fetch the data
         .then((res) => {
             if (!res.ok) {
-                User.innerHTML = `<strong>Failed to fetch</strong>`
+                User.innerHTML = `<strong>Failed To Fetch ${res.ok} ${res.status}</strong>`
                 throw new Error("Failed To Fetch");
             }
             return res.text();
         })
-        .then((data) => User.innerHTML = `<strong>${data}</strong>`)
+        .then((data) => {
+            User.innerHTML = `<strong>${data}</strong>`
+        })
         .catch((err) => console.error(err));
 }
 
-async function GetCountTest() {
+async function GetUserCount() {
     try {
-        const res = await fetch("https://bot.shapes.lol/server-count", { mode: "no-cors" });
+        const res = await fetch("https://bot.shapes.lol/user-count");
         if (!res.ok) {
+            User.innerHTML = `<strong>Unknown</strong>`;
+            throw new Error("Failed To Fetch");
+        }
+
+        const data = await res.text();
+        User.innerHTML = `<strong>${data}</strong>`;
+        console.log(data, "Users Use Shapes!");
+    }
+    catch (err) {
+        console.error(err);
+        Server.innerHTML = `<strong>${err}</strong>`;
+    }
+}
+
+async function GetServerCount() {
+    try {
+        const res = await fetch("https://bot.shapes.lol/server-count");
+        if (!res.ok) {
+            Server.innerHTML = `<strong>Unknown</strong>`;
             throw new Error("Failed To Fetch");
         }
 
         const data = await res.text();
         Server.innerHTML = `<strong>${data}</strong>`;
-        console.log(data);
+        console.log(data, "Servers Use Shapes!");
     }
     catch (err) {
         console.error(err);
+        Server.innerHTML = `<strong>${err}</strong>`;
     }
 }
 
-GetCountTest();
+GetServerCount();
 GetUserCount();
+
 // GetServerCount();
-//wait(5000);
 //while (true) {
 //GetCountTest();
 //GetUserCount();
 //GetServerCount();
-//wait(10000);
+//wait(5000);
 //}
