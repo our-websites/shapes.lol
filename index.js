@@ -37,7 +37,7 @@ async function GetCountTest() {
 GetCountTest();
 GetUserCount();
 // GetServerCount();
-wait(5000);
+//wait(5000);
 //while (true) {
     //GetCountTest();
     //GetUserCount();
