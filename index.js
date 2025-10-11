@@ -74,5 +74,5 @@ console.log("This Website Is A WIP")
 GetServerCount();
 GetUserCount();
 
-setInterval(GetServerCount, 10000)
+setInterval(GetServerCount, 10000);
 setInterval(GetUserCount, 10000);

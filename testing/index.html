@@ -2,296 +2,326 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Shapes</title>
-    <link rel="icon" type="image/png" href="https://cdn.shapes.lol/shapes/favicon.png">
-    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#111111">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shapes</title>
+  <link rel="icon" type="image/png" href="https://cdn.shapes.lol/shapes/favicon.png">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#111111">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
 
-    <style>
-        :root {
-            --bg-1: #050505;
-            --bg-2: #0d0d0f;
-            --muted: #9b9b9f;
-            --accent: #bdbdbf;
-            --white: #ffffff;
-            --outline-gray: rgba(160, 160, 170, 0.25);
-        }
+  <style>
+    :root {
+      --bg-1: #050505;
+      --bg-2: #0d0d0f;
+      --muted: #9b9b9f;
+      --accent: #bdbdbf;
+      --white: #ffffff;
+      --outline-gray: rgba(160, 160, 170, 0.25);
+    }
 
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-            background: radial-gradient(1200px 700px at 50% 85%, rgba(40, 40, 45, 0.25), transparent 15%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
-            color: var(--white);
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            overflow-y: auto;
-            -webkit-tap-highlight-color: transparent;
-            background-color: #111111;
-        }
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 700px at 50% 85%, rgba(40, 40, 45, 0.25), transparent 15%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-y: auto;
+      -webkit-tap-highlight-color: transparent;
+      background-color: #111111;
+    }
 
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background-image:
-                radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px),
-                radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px),
-                radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px),
-                radial-gradient(circle at 80% 12%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px);
-            background-repeat: repeat;
-            opacity: 0.8;
-            pointer-events: none;
-            mix-blend-mode: screen;
-        }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px),
+        radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px),
+        radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px),
+        radial-gradient(circle at 80% 12%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px);
+      background-repeat: repeat;
+      opacity: 0.8;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
 
-        .topbar {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 999px;
-            padding: 8px 14px;
-            margin: 24px auto 16px auto;
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 999px;
+      padding: 8px 14px;
+      margin: 24px auto 16px auto;
 
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(6px);
-            position: relative;
-            max-width: 880px;
-            width: calc(100% - 32px);
-        }
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(6px);
+      position: relative;
+      max-width: 880px;
+      width: calc(100% - 32px);
+    }
 
-        .brand-dot {
-            width: 28px;
-            height: 28px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .brand-dot {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        .brand-dot img {
-            width: 28px;
-            height: 28px;
-            object-fit: contain;
-            border: none;
-            border-radius: 0;
-            display: block;
-        }
+    .brand-dot img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      border: none;
+      border-radius: 0;
+      display: block;
+    }
 
-        .wrap {
-            max-width: 880px;
-            margin: 0 auto;
-            padding: 20px 16px 60px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .hero {
-            text-align: center;
-            padding: 40px 12px 20px;
-        }
+    .hero {
+      text-align: center;
+      padding: 40px 12px 20px;
+    }
 
-        .headline {
-            font-family: "Poppins", "Inter", system-ui;
-            font-weight: 800;
-            line-height: 0.95;
-            margin: 0 auto 18px;
-            color: var(--white);
-            letter-spacing: -1px;
-            max-width: 780px;
-            font-size: clamp(36px, 10vw, 100px);
-        }
+    .headline {
+      font-family: "Poppins", "Inter", system-ui;
+      font-weight: 800;
+      line-height: 0.95;
+      margin: 0 auto 18px;
+      color: var(--white);
+      letter-spacing: -1px;
+      max-width: 780px;
+      font-size: clamp(36px, 10vw, 100px);
+    }
 
-        .muted {
-            color: #a7a7ad;
-            font-weight: 800;
-        }
+    .muted {
+      color: #a7a7ad;
+      font-weight: 800;
+    }
 
-        .sub {
-            margin: 0 auto 28px;
-            max-width: 680px;
-            font-size: clamp(12px, 3vw, 18px);
-            color: var(--muted);
-            line-height: 1.6;
-            font-weight: 300;
-            letter-spacing: 0.2px;
-        }
+    .sub {
+      margin: 0 auto 28px;
+      max-width: 680px;
+      font-size: clamp(12px, 3vw, 18px);
+      color: var(--muted);
+      line-height: 1.6;
+      font-weight: 300;
+      letter-spacing: 0.2px;
+    }
 
-        .stats {
-            display: inline-block;
-            margin-top: 8px;
-            color: var(--muted);
-            font-weight: 400;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-        }
+    .stats {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
 
-        .stats strong {
-            color: var(--white);
-            font-weight: 700;
-            margin: 0 4px;
-            font-family: "Poppins", "Inter";
-        }
+    .stats strong {
+      color: var(--white);
+      font-weight: 700;
+      margin: 0 4px;
+      font-family: "Poppins", "Inter";
+    }
 
-        .button-style {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 20px;
-            padding: 10px 20px;
-            color: var(--white);
-            font-family: "Poppins", "Inter";
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 6px;
-            text-decoration: none;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(160, 160, 170, 0.25);
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
-            transition: transform .12s ease, box-shadow .12s ease;
-            -webkit-tap-highlight-color: transparent;
-            outline: none;
-        }
+    .button-style {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      color: var(--white);
+      font-family: "Poppins", "Inter";
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(160, 160, 170, 0.25);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+      transition: transform .12s ease, box-shadow .12s ease;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
 
-        .button-style:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
-        }
+    .button-style:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+    }
 
-        .button-style:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.03), 0 6px 16px rgba(0, 0, 0, 0.5);
-        }
+    .button-style:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.03), 0 6px 16px rgba(0, 0, 0, 0.5);
+    }
 
-        .button-style img {
-            width: 18px;
-            height: 18px;
-            object-fit: contain;
-            display: inline-block;
-            vertical-align: middle;
-        }
+    .button-style img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      display: inline-block;
+      vertical-align: middle;
+    }
 
-        a,
-        button {
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            user-select: none;
-            -webkit-user-select: none;
-        }
+    a,
+    button {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
 
-        @media (max-width:420px) {
-            .headline {
-                font-size: clamp(32px, 11vw, 64px);
-            }
+    @media (max-width:420px) {
+      .headline {
+        font-size: clamp(32px, 11vw, 64px);
+      }
 
-            .button-style {
-                padding: 10px 16px;
-                font-size: 14px;
-            }
-        }
-    </style>
+      .button-style {
+        padding: 10px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header class="topbar">
-        <div class="brand-dot">
-            <img src="https://cdn.shapes.lol/shapes/logo.png" alt="Shapes Logo">
-        </div>
-    </header>
-
-    <div class="wrap">
-        <main class="hero">
-            <h1 class="headline">
-                Shapes is<br>
-                Discord's<br>
-                premier <span class="muted">all-</span><span class="muted">in-one</span> <span>bot</span>
-            </h1>
-
-            <p class="sub">
-                A versatile multipurpose bot designed to elevate your Discord server and DMs with powerful features and
-                intuitive user-focused commands.
-            </p>
-
-            <div class="stats">
-                serving <div id="users"><strong>10+</strong></div> users and <div id="servers"><strong>10+</strong>
-                </div> servers
-            </div>
-
-            <a href="https://discord.com/oauth2/authorize?client_id=1414465348434137098" class="button-style">
-                <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
-                <span>Add Bot</span>
-            </a>
-
-            <a href="https://shapes.lol/discord" target="_blank" class="button-style">
-                <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
-                <span>Support Server</span>
-            </a>
-        </main>
+  <header class="topbar">
+    <div class="brand-dot">
+      <img src="https://cdn.shapes.lol/shapes/logo.png" alt="Shapes Logo">
     </div>
-    <script>
-        const User = document.getElementById("users");
-        const Server = document.getElementById("servers");
+  </header>
 
-        function wait(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
+  <div class="wrap">
+    <main class="hero">
+      <h1 class="headline">
+        Shapes is<br>
+        Discord's<br>
+        premier <span class="muted">all-</span><span class="muted">in-one</span> <span>bot</span>
+      </h1>
+
+      <p class="sub">
+        A versatile multipurpose bot designed to elevate your Discord Servers, Group Chats, and DMs with powerful
+        features and intuitive user-focused commands.
+      </p>
+
+      <div class="stats">
+        serving <div id="users"><strong>10+</strong></div> users and <div id="servers"><strong>10+</strong></div> guilds
+      </div>
+
+      <a href="https://discord.com/oauth2/authorize?client_id=1414465348434137098" class="button-style">
+        <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
+        <span>Add Bot</span>
+      </a>
+
+      <a href="https://shapes.lol/discord" target="_blank" class="button-style">
+        <img src="https://cdn.shapes.lol/discord/logo.png" alt="Discord Icon">
+        <span>Support Server</span>
+      </a>
+    </main>
+  </div>
+  <script>
+    const User = document.getElementById("users");
+    const Server = document.getElementById("servers");
+
+    User.innerHTML = `<strong>Loading.</strong>`
+    Server.innerHTML = `<strong>Loading.</strong>`
+
+    User.innerHTML = `<strong>Loading..</strong>`
+    Server.innerHTML = `<strong>Loading..</strong>`
+
+
+    User.innerHTML = `<strong>Loading...</strong>`
+    Server.innerHTML = `<strong>Loading...</strong>`
+
+
+    function wait(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function GetUserCountOLD() {
+      fetch("https://bot.shapes.lol/user-count") // Fetch the data
+        .then((res) => {
+          if (!res.ok) {
+            User.innerHTML = `<strong>Failed To Fetch ${res.ok} ${res.status}</strong>`
+            throw new Error("Failed To Fetch");
+          }
+          return res.text();
+        })
+        .then((data) => {
+          User.innerHTML = `<strong>${data}</strong>`
+        })
+        .catch((err) => console.error(err));
+    }
+
+    async function GetUserCount() {
+      try {
+        const res = await fetch("https://bot.shapes.lol/user-count");
+        if (!res.ok) {
+          //throw new Error("Failed To Fetch");
+          return
         }
 
-        async function GetUserCount() {
-            fetch("https://bot.shapes.lol/user-count") // Fetch the data
-                .then((res) => {
-                    if (!res.ok) {
-                        User.innerHTML = `<strong>Failed To Fetch ${res.ok} ${res.status}</strong>`
-                        throw new Error("Failed To Fetch");
-                    }
-                    return res.text();
-                })
-                .then((data) => {
-	                User.innerHTML = `<strong>${data}</strong>`
-                })
-                .catch((err) => console.error(err));
+        const data = await res.text();
+        User.innerHTML = `<strong>${data}</strong>`;
+        console.log(data, "Users Use Shapes!");
+      }
+      catch (err) {
+        User.innerHTML = `<strong>Unknown</strong>`;
+        //console.error(err);
+        //Server.innerHTML = `<strong>${err}</strong>`;
+      }
+    }
+
+    async function GetServerCount() {
+      try {
+        const res = await fetch("https://bot.shapes.lol/server-count");
+        if (!res.ok) {
+          //throw new Error("Failed To Fetch");
+          return
         }
 
-        async function GetCountTest() {
-            try {
-                const res = await fetch("https://bot.shapes.lol/server-count");
-                if (!res.ok) {
-                    throw new Error("Failed To Fetch");
-                }
+        const data = await res.text();
+        Server.innerHTML = `<strong>${data}</strong>`;
+        console.log(data, "Servers Use Shapes!");
+      }
+      catch (err) {
+        Server.innerHTML = `<strong>Unknown</strong>`;
+        //console.error(err);
+        //Server.innerHTML = `<strong>${err}</strong>`;
+      }
+    }
 
-                const data = await res.text();
-                Server.innerHTML = `<strong>${data}</strong>`;
-                console.log(data);
-            }
-            catch (err) {
-                console.error(err);
-            }
-        }
-        wait(5000);
-        GetCountTest();
-        GetUserCount();
-        // GetServerCount();
-        //while (true) {
-            //GetCountTest();
-            //GetUserCount();
-            //GetServerCount();
-            //wait(5000);
-        //}
+    console.log("This Website Is A WIP")
 
-    </script>
+    GetServerCount();
+    GetUserCount();
+
+    setInterval(GetServerCount, 10000);
+    setInterval(GetUserCount, 10000);
+  </script>
 </body>
+
 </html>
