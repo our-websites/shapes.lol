@@ -3,11 +3,10 @@ const Server = document.getElementById("servers");
 
 User.innerHTML = `<strong>Loading.</strong>`
 Server.innerHTML = `<strong>Loading.</strong>`
-
+wait(1000)
 User.innerHTML = `<strong>Loading..</strong>`
 Server.innerHTML = `<strong>Loading..</strong>`
-
-
+wait(1000)
 User.innerHTML = `<strong>Loading...</strong>`
 Server.innerHTML = `<strong>Loading...</strong>`
 

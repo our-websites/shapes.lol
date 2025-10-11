@@ -228,7 +228,7 @@
       </p>
 
       <div class="stats">
-        serving <div id="users"><strong>10+</strong></div> users and <div id="servers"><strong>10+</strong></div> guilds
+        Serving <div id="users"><strong>Loading</strong></div> users and <div id="servers"><strong>Loading</strong></div> servers
       </div>
 
       <a href="https://discord.com/oauth2/authorize?client_id=1414465348434137098" class="button-style">
@@ -248,11 +248,10 @@
 
     User.innerHTML = `<strong>Loading.</strong>`
     Server.innerHTML = `<strong>Loading.</strong>`
-
+    wait(1000)
     User.innerHTML = `<strong>Loading..</strong>`
     Server.innerHTML = `<strong>Loading..</strong>`
-
-
+    wait(1000)
     User.innerHTML = `<strong>Loading...</strong>`
     Server.innerHTML = `<strong>Loading...</strong>`
 
