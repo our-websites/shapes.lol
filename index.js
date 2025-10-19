@@ -22,7 +22,7 @@ async function GetUserCountOLD() {
                 User.innerHTML = `<strong>Failed To Fetch ${res.ok} ${res.status}</strong>`
                 throw new Error("Failed To Fetch");
             }
-            return res.text();
+            return res.json();
         })
         .then((data) => {
             User.innerHTML = `<strong>${data}</strong>`
@@ -38,8 +38,8 @@ async function GetUserCount() {
             return
         }
 
-        const data = await res.text();
-        User.innerHTML = `<strong>${data}</strong>`;
+        const data = await res.json();
+        User.innerHTML = `<strong>${data["Users"]}</strong>`;
         console.log(data, "Users Use Shapes!");
     }
     catch (err) {
@@ -58,7 +58,7 @@ async function GetServerCount() {
         }
 
         const data = await res.text();
-        Server.innerHTML = `<strong>${data}</strong>`;
+        Server.innerHTML = `<strong>${data["Servers"]}</strong>`;
         console.log(data, "Servers Use Shapes!");
     }
     catch (err) {
@@ -68,10 +68,32 @@ async function GetServerCount() {
     }
 }
 
+async function GetBotInfo() {
+    try {
+        const res = await fetch("https://bot2.shapes.lol/botinfo");
+        if (!res.ok) {
+            //throw new Error("Failed To Fetch");
+            return
+        }
+        const data = await res.json();
+        Server.innerHTML = `<strong>${data["Servers"]}</strong>`;
+        User.innerHTML = `<strong>${data["Users"]}</strong>`;
+        console.log(data, "Bot Info Fetched!");
+    }
+    catch (err) {
+        Server.innerHTML = `<strong>Unknown</strong>`;
+        User.innerHTML = `<strong>Unknown</strong>`;
+        //console.error(err);
+        //Server.innerHTML = `<strong>${err}</strong>`;
+    }
+}
+
 console.log("This Website Is A WIP")
 
-GetServerCount();
-GetUserCount();
+//GetServerCount();
+//GetUserCount();
+GetBotInfo();
 
-setInterval(GetServerCount, 10000);
-setInterval(GetUserCount, 10000);
+//setInterval(GetServerCount, 10000);
+//setInterval(GetUserCount, 10000);
+setInterval(GetBotInfo, 10000)
