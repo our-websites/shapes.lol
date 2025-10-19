@@ -39,7 +39,7 @@ async function GetUserCount() {
         }
 
         const data = await res.json();
-        User.innerHTML = `<strong>${data["Users"]}</strong>`;
+        User.innerHTML = `<strong>${data}</strong>`;
         console.log(data, "Users Use Shapes!");
     }
     catch (err) {
@@ -58,7 +58,7 @@ async function GetServerCount() {
         }
 
         const data = await res.text();
-        Server.innerHTML = `<strong>${data["Servers"]}</strong>`;
+        Server.innerHTML = `<strong>${data}</strong>`;
         console.log(data, "Servers Use Shapes!");
     }
     catch (err) {
@@ -70,7 +70,7 @@ async function GetServerCount() {
 
 async function GetBotInfo() {
     try {
-        const res = await fetch("https://bot2.shapes.lol/botinfo");
+        const res = await fetch("https://bot.shapes.lol/botinfo");
         if (!res.ok) {
             //throw new Error("Failed To Fetch");
             return
@@ -97,3 +97,4 @@ GetBotInfo();
 //setInterval(GetServerCount, 10000);
 //setInterval(GetUserCount, 10000);
 setInterval(GetBotInfo, 10000)
+
