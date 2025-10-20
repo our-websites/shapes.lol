@@ -4,7 +4,7 @@ async function fetchLeaderboard() {
     try {
         const response = await fetch('https://bot.shapes.lol/clb');
         const data = await response.json();
-        displayLeaderboard(data.users);
+        displayLeaderboard(data);
     } catch (error) {
         console.error('Error fetching leaderboard:', error);
     }
