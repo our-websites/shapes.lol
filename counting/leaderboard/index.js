@@ -46,4 +46,6 @@ function createCell(content) {
     cell.textContent = content;
     return cell;
 }
+
 fetchLeaderboard();
+setInterval(fetchLeaderboard, 60000); // Refresh every 60 seconds
