@@ -51,18 +51,19 @@
                 const tbody = document.getElementById('leaderboard').getElementsByTagName('tbody')[0];
                 tbody.innerHTML = ''; // Clear existing data
 
-                data.forEach(entry => {
+                for (const server in data) {
                     const row = document.createElement('tr');
                     const serverCell = document.createElement('td');
                     const numberCell = document.createElement('td');
 
-                    serverCell.textContent = entry.server;
-                    numberCell.textContent = entry.highestnumber;
+                    serverCell.textContent = server;
+                    numberCell.textContent = data['highestnumber'];
 
                     row.appendChild(serverCell);
                     row.appendChild(numberCell);
                     tbody.appendChild(row);
-                });
+                }
+
             } catch (error) {
                 console.error('Error fetching leaderboard data:', error);
             }
