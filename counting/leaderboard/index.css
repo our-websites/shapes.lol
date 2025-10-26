@@ -193,6 +193,13 @@ h1 {
 
 #leaderboard tbody tr td:first-child {
   font-weight: 500;
+  max-width: 48ch;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-size: clamp(13px, 1.4vw, 15px);
+  line-height: 1.05;
 }
 
 #leaderboard tbody tr td:nth-child(2),
@@ -202,6 +209,8 @@ h1 {
   color: var(--accent);
   text-align: right;
   white-space: nowrap;
+  min-width: 6ch;
+  max-width: 12ch;
 }
 
 @media (max-width: 600px) {
@@ -211,4 +220,8 @@ h1 {
   #leaderboard td { padding: 8px 12px; border-top: none; text-align: left; }
   #leaderboard td::before { content: attr(data-label); color: var(--muted); display: inline-block; width: 45%; text-transform: lowercase; font-weight: 600; }
   #leaderboard td span { display: inline-block; width: 55%; text-align: right; }
+
+  /* tighten server name for small screens and force two-line names when possible */
+  #leaderboard td:first-child { font-size: clamp(12px, 2.6vw, 13px); max-width: 100%; }
+  #leaderboard td:first-child::first-line { font-weight: 700; }
 }
