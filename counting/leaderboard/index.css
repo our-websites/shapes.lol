@@ -225,7 +225,7 @@ h1 {
   word-break: break-word;
   font-size: clamp(12px, 1.2vw, 14px);
   line-height: 1.05;
-  text-align: right;
+  text-align: center;
   color: var(--accent);
 }
 
