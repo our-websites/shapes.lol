@@ -234,7 +234,7 @@ h1 {
   font-family: "Poppins", "Inter", system-ui;
   font-weight: 600;
   color: var(--accent);
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
   min-width: 6ch;
   max-width: 12ch;
