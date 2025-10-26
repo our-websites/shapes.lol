@@ -172,8 +172,8 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-transform: none;
+  letter-spacing: 0.6px;
 }
 
 #leaderboard td {
@@ -215,13 +215,17 @@ h1 {
 
 @media (max-width: 600px) {
   #leaderboard thead { display: none; }
-  #leaderboard, #leaderboard tbody, #leaderboard tr, #leaderboard td { display: block; width: 100%; }
+  #leaderboard, #leaderboard tbody, #leaderboard tr { display: block; width: 100%; }
   #leaderboard tr { margin-bottom: 12px; background: rgba(255,255,255,0.02); border-radius: 10px; padding: 8px; }
-  #leaderboard td { padding: 8px 12px; border-top: none; text-align: left; }
-  #leaderboard td::before { content: attr(data-label); color: var(--muted); display: inline-block; width: 45%; text-transform: lowercase; font-weight: 600; }
-  #leaderboard td span { display: inline-block; width: 55%; text-align: right; }
-
+  #leaderboard td { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border-top: none; }
+  #leaderboard td::before { content: attr(data-label); color: var(--muted); flex: 0 0 48%; text-transform: lowercase; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #leaderboard td span { display: inline-block; flex: 1 1 52%; text-align: right; min-width: 0; }
+  
   /* tighten server name for small screens and force two-line names when possible */
-  #leaderboard td:first-child { font-size: clamp(12px, 2.6vw, 13px); max-width: 100%; }
+  #leaderboard td:first-child { font-size: clamp(12px, 3.2vw, 13px); max-width: 100%; }
   #leaderboard td:first-child::first-line { font-weight: 700; }
+
+  /* ensure numbers keep good spacing on mobile this as fix for now */
+  #leaderboard td span { font-weight: 600; color: var(--accent); }
 }
+
