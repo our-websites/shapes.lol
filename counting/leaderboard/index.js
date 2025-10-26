@@ -1,4 +1,4 @@
-// making it less complicated than the old code
+// making it less complicated than the old code (NO OFFENSE)
 
 async function fetchLeaderboard(){
     try{
