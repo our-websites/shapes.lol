@@ -1,9 +1,10 @@
 // making it less complicated than the old code (NO OFFENSE)
 
+// This for top 10 per page so no need to show 20 server in same page or something liek that
 let currentPage = 1;
 let leaderboardData = [];
 const itemsPerPage = 10;
-
+// Animation Counter
 function animateCounter(element, target, duration = 2000) {
     const start = Date.now();
     const startValue = 0;
@@ -66,7 +67,7 @@ function displayPage(page) {
         tbody.appendChild(tr);
     });
 }
-
+// Fetech leaderboard from "https://bot.shapes.lol/clb"
 async function fetchLeaderboard(){
     try{
         const r = await fetch('https://bot.shapes.lol/clb');
