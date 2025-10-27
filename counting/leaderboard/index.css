@@ -55,7 +55,6 @@ html,body{
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
     background-color: #111111;
-    animation: fadeIn 1s ease-out;
 }
 
 /* Custom Scrollbar */
