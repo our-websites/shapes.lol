@@ -1,4 +1,3 @@
-// making it less complicated than the old code (NO OFFENSE)
 
 // This for top 10 per page so no need to show 20 server in same page or something liek that
 let currentPage = 1;
