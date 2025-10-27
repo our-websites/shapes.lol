@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shapes</title>
+    <title>Counting Leaderboard</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="leaderboard-container">
         <h1>Counting Leaderboard</h1>
+        <div class="pagination-controls">
+            <button id="prev-page" class="nav-button" disabled>&larr; Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page" class="nav-button">&rarr; Next</button>
+        </div>
     <table id="leaderboard">
       <thead>
         <tr>
@@ -26,6 +31,7 @@
     <script src="index.js"></script>
 </body>
 </html>
+
 
 
 
