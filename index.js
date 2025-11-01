@@ -1,49 +1,12 @@
-const User = document.getElementById("users");
-const Server = document.getElementById("servers");
-
-function displayLoadingAnimation() {
-    let dots = 0;
-    const updateLoading = () => {
-        const loading = "Loading" + ".".repeat(dots);
-        User.innerHTML = `<strong>${loading}</strong>`;
-        Server.innerHTML = `<strong>${loading}</strong>`;
-        dots = (dots + 1) % 4;
-    };
-    updateLoading();
-    return setInterval(updateLoading, 500);
-}
-
-async function GetBotInfo() {
-    try {
-        const res = await fetch("https://bot.shapes.lol/botinfo");
-        if (!res.ok) {
-            throw new Error("Failed to fetch");
-        }
-        const data = await res.json();
-        Server.innerHTML = `<strong>${data["Servers"] || "Unknown"}</strong>`;
-        User.innerHTML = `<strong>${data["Users"] || "Unknown"}</strong>`;
-        console.log("Bot Info Fetched:", data);
-        return true;
-    }
-    catch (err) {
-        console.error("Error fetching bot info:", err);
-        Server.innerHTML = `<strong>Unknown</strong>`;
-        User.innerHTML = `<strong>Unknown</strong>`;
-        return false;
-    }
-}
-
-// Start loading animation
-const loadingInterval = displayLoadingAnimation();
-
-// Initial fetch
-GetBotInfo().then(() => {
-    // Clear loading animation once data is fetched
-    clearInterval(loadingInterval);
+// Add smooth scroll behavior
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
-
-// Refresh data every 10 seconds
-setInterval(GetBotInfo, 10000);
 
 // Counting leaderboard fetch
  const animateCounter = (element, target, duration = 1500) => {
@@ -86,15 +49,17 @@ setInterval(GetBotInfo, 10000);
 
         card.innerHTML = `
           <div class="card-rank ${rankClass}">#${rankNum}</div>
-          <div class="card-server-name">${escapeHtml(server.serverName)}</div>
-          <div class="card-stats">
-            <div class="card-stat-row">
-              <span class="card-stat-label">Current</span>
-              <span class="card-stat-value counter-current-${index}">0</span>
-            </div>
-            <div class="card-stat-row">
-              <span class="card-stat-label">Highest</span>
-              <span class="card-stat-value counter-highest-${index}">0</span>
+          <div class="card-content">
+            <div class="card-server-name">${escapeHtml(server.serverName)}</div>
+            <div class="card-stats">
+              <div class="card-stat-row">
+                <span class="card-stat-label">Current</span>
+                <span class="card-stat-value counter-current-${index}">0</span>
+              </div>
+              <div class="card-stat-row">
+                <span class="card-stat-label">Highest</span>
+                <span class="card-stat-value counter-highest-${index}">0</span>
+              </div>
             </div>
           </div>
         `;
