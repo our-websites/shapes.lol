@@ -348,7 +348,7 @@ body::before {
 
     .header-nav {
       display: flex;
-      align-items: center;
+      align-items: right;
       justify-content: space-between;
       width: 100%;
       padding: 0 16px;
