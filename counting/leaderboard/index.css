@@ -363,3 +363,12 @@ h1 {
   }
 }
 
+@media (max-width: 400px) {
+  #leaderboard th, #leaderboard td {
+    padding: 8px 6px;
+  }
+
+  #leaderboard tbody tr td:first-child {
+    font-size: clamp(10px, 3.5vw, 12px);
+  }
+}
