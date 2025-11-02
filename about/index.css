@@ -346,6 +346,49 @@ body::before {
   transform: translateY(-4px);
 }
 
+    .header-nav {
+      display: flex;
+      align-items: right;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 16px;
+      gap: 16px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.2s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
 a, button {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -355,6 +398,21 @@ a, button {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .header-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
   .wrap {
     padding: 20px 16px 40px;
     gap: 16px;
@@ -392,6 +450,14 @@ a, button {
 }
 
 @media (max-width: 480px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
   .headline {
     font-size: clamp(24px, 10vw, 42px);
     letter-spacing: -0.5px;
