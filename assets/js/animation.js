@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // FAQ section animation (separate from hero elements)
+    // FAQ section animation (separate from hero elements), (File: index.html)
     gsap.from('.faq-section', {
         y: 30,
         duration: 0.8,
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "power2.out"
     });
 
-    // FAQ items animation
+    // FAQ items animation (File: index.html)
     gsap.from('.faq-item', {
         y: 20,
         duration: 0.6,
