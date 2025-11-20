@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "power2.out"
     });
 
-    // Topbar animation
+    // Topbar animation (File: index.html)
     gsap.from('.topbar', {
         opacity: 0,
         y: -20,
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "power2.out"
     });
 
-    // Stats animation
+    // Stats animation (File: index.html)
     gsap.from('.stats', {
         opacity: 0,
         y: 20,
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "power2.out"
     });
 
-    // Add floating animation to stats numbers
+    // Add floating animation to stats numbers (File: index.html)
     gsap.to('.stats strong', {
         y: -5,
         duration: 1.5,
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         stagger: 0.2
     });
 
-    // Leaderboard cards animation
+    // Leaderboard cards animation (File: index.html)
     gsap.from('.leaderboard-card', {
         opacity: 0,
         y: 20,
