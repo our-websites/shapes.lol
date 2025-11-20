@@ -15,6 +15,8 @@
   <meta property="og:locale" content="en-US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shapes — Multipurpose Discord Bot">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
@@ -61,6 +63,10 @@
           </svg>
           Support Server
         </a>
+      </div>
+
+      <div class="stats">
+        Serving <strong id="users">Loading</strong> Users and <strong id="servers">Loading</strong> Servers
       </div>
 
       <section class="counting-section" id="counting">
@@ -144,7 +150,7 @@
       </section>
     </main>
   </div>
-  <script src="assets/js/faq.js"></script>
   <script src="assets/js/index.js"></script>
+  <script src="assets/js/animation.js"></script>
 </body>
 </html>
