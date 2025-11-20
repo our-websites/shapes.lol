@@ -1,5 +1,5 @@
 
-// This for top 10 per page so no need to show 20 server in same page or something liek that
+// This for top 10 per page so no need to show 20 server in same page or something like that
 let currentPage = 1;
 let leaderboardData = [];
 const itemsPerPage = 10;
