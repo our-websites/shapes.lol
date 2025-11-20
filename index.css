@@ -8,6 +8,33 @@
   --primary: #6366f1;
   --primary-dark: #4f46e5;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-1);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.4);
+  border-radius: 6px;
+  border: 3px solid var(--bg-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.6);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary);
+}
+/* This should work For FireFox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.4) var(--bg-1);
+}
 
 @keyframes fadeInUp {
   from {
@@ -81,7 +108,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: "Stack Sans Notch", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: radial-gradient(1200px 700px at 50% 85%, rgba(40, 40, 45, 0.25), transparent 15%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
   color: var(--white);
   display: flex;
@@ -170,7 +197,7 @@ body::before {
 }
 
 .headline {
-  font-family: "Poppins", "Inter", system-ui;
+  font-family: "Stack Sans Notch", "Poppins", "Inter", system-ui;
   font-weight: 800;
   line-height: 0.95;
   margin: 0 auto 18px;
