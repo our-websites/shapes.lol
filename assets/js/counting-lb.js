@@ -1,9 +1,29 @@
-
-// This for top 10 per page so no need to show 20 server in same page or something liek that
+// This for top 10 per page so no need to show 20 server in same page or something like that
 let currentPage = 1;
 let leaderboardData = [];
 const itemsPerPage = 10;
-// Animation Counter
+
+function containsDiscordUrl(serverName) {
+    if (!serverName) return false;
+
+
+    const lowerName = serverName.toLowerCase();
+
+    const discordUrlPatterns = [
+        'discord.gg/',
+        '.gg/',
+        'discord.com/invite/',
+        'discordapp.com/invite/',
+        'dsc.gg/'
+    ];
+
+    return discordUrlPatterns.some(pattern => lowerName.includes(pattern));
+}
+
+function filterLeaderboardData(data) {
+    return data.filter(server => !containsDiscordUrl(server.serverName));
+}
+
 function animateCounter(element, target, duration = 2000) {
     const start = Date.now();
     const startValue = 0;
@@ -66,12 +86,15 @@ function displayPage(page) {
         tbody.appendChild(tr);
     });
 }
-// Fetech leaderboard from "https://bot.shapes.lol/clb"
+
+// Fetch leaderboard from "https://bot.shapes.lol/clb"
 async function fetchLeaderboard(){
     try{
         const r = await fetch('https://bot.shapes.lol/clb');
         const d = await r.json();
-        leaderboardData = Array.from(d.Leaderboard).map(([,s]) => s);
+        const rawData = Array.from(d.Leaderboard).map(([,s]) => s);
+        // Apply filter to remove servers with Discord URLs
+        leaderboardData = filterLeaderboardData(rawData);
         updatePaginationControls();
         displayPage(currentPage);
     }catch(e){}

@@ -8,6 +8,33 @@
   --primary: #6366f1;
   --primary-dark: #4f46e5;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-1);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.4);
+  border-radius: 6px;
+  border: 3px solid var(--bg-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.6);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary);
+}
+/* This should work For FireFox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.4) var(--bg-1);
+}
 
 @keyframes fadeInUp {
   from {
@@ -81,7 +108,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: "Stack Sans Notch", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: radial-gradient(1200px 700px at 50% 85%, rgba(40, 40, 45, 0.25), transparent 15%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
   color: var(--white);
   display: flex;
@@ -92,7 +119,6 @@ html, body {
   overflow-y: auto;
   -webkit-tap-highlight-color: transparent;
   background-color: #111111;
-  animation: fadeIn 0.8s ease-out;
 }
 
 body::before {
@@ -107,7 +133,6 @@ body::before {
   opacity: 0.8;
   pointer-events: none;
   mix-blend-mode: screen;
-  animation: fadeIn 1.2s ease-out;
 }
 
 .topbar {
@@ -125,7 +150,6 @@ body::before {
   max-width: 880px;
   width: calc(100% - 32px);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  animation: slideInDown 0.6s ease-out;
 }
 
 .brand-dot {
@@ -134,7 +158,6 @@ body::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  animation: fadeInUp 0.6s ease-out 0.1s both;
 }
 
 .brand-dot img {
@@ -166,11 +189,10 @@ body::before {
 .hero {
   text-align: center;
   padding: 40px 12px 20px;
-  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .headline {
-  font-family: "Poppins", "Inter", system-ui;
+  font-family: "Stack Sans Notch", "Poppins", "Inter", system-ui;
   font-weight: 800;
   line-height: 0.95;
   margin: 0 auto 18px;
@@ -182,7 +204,6 @@ body::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
 .headline .muted {
@@ -198,7 +219,6 @@ body::before {
   line-height: 1.6;
   font-weight: 300;
   letter-spacing: 0.2px;
-  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .stats-container {
@@ -213,7 +233,6 @@ body::before {
   border-radius: 12px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  animation: fadeInUp 0.8s ease-out 0.5s both;
 }
 
 .stat-item {
@@ -221,7 +240,6 @@ body::before {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  animation: countUp 0.6s ease-out;
 }
 
 .stat-value {
@@ -230,7 +248,6 @@ body::before {
   font-family: "Poppins", "Inter";
   color: var(--primary);
   line-height: 1;
-  animation: float 3s ease-in-out infinite;
 }
 
 .stat-label {
@@ -243,12 +260,17 @@ body::before {
 
 .stats {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 16px;
   color: var(--muted);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.5px;
-  animation: fadeInUp 0.8s ease-out 0.6s both;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 24px;
+  border-radius: 50px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(160, 160, 170, 0.2);
 }
 
 .stats strong {
@@ -256,6 +278,7 @@ body::before {
   font-weight: 700;
   margin: 0 4px;
   font-family: "Poppins", "Inter";
+  font-size: 18px;
 }
 
 .buttons-container {
@@ -264,7 +287,6 @@ body::before {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 24px;
-  animation: fadeInUp 0.8s ease-out 0.7s both;
 }
 
 .button-style {
@@ -392,35 +414,52 @@ a, button {
 }
 
 @media (max-width: 480px) {
-  .headline {
-    font-size: clamp(24px, 10vw, 42px);
-    letter-spacing: -0.5px;
+  .nav-links {
+    gap: 12px;
   }
 
-  .button-style {
-    padding: 10px 16px;
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .counting-title {
+    font-size: clamp(20px, 5vw, 28px);
+  }
+
+  .leaderboard-cards {
+    gap: 12px;
+  }
+
+  .leaderboard-card {
+    padding: 18px;
+  }
+
+  .card-server-name {
+    font-size: 15px;
+  }
+
+  .view-more-btn {
+    width: 100%;
+  }
+
+  .faq-title {
+    font-size: clamp(20px, 5vw, 28px);
+  }
+
+  .faq-question {
+    padding: 14px 18px;
+  }
+
+  .faq-question-text {
+    font-size: 14px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 18px 14px 18px;
+  }
+
+  .faq-answer-text {
     font-size: 13px;
-    flex: 1;
-    min-width: 140px;
-  }
-
-  .buttons-container {
-    gap: 8px;
-    width: 100%;
-  }
-
-  .stats-container {
-    gap: 20px;
-    padding: 16px;
-    flex-direction: column;
-  }
-
-  .stat-item {
-    width: 100%;
-  }
-
-  .sub {
-    font-size: clamp(12px, 3vw, 16px);
   }
 }
 
@@ -552,22 +591,18 @@ a, button {
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
       position: relative;
       overflow: hidden;
-      animation: fadeInUp 0.8s ease-out;
       display: flex;
       align-items: center;
       gap: 16px;
     }
 
     .leaderboard-card:nth-child(1) {
-      animation-delay: 0.9s;
     }
 
     .leaderboard-card:nth-child(2) {
-      animation-delay: 1s;
     }
 
     .leaderboard-card:nth-child(3) {
-      animation-delay: 1.1s;
     }
 
     .leaderboard-card::before {
@@ -685,7 +720,6 @@ a, button {
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
       text-decoration: none;
       display: inline-flex;
-      animation: fadeInUp 0.8s ease-out 1.2s both;
       margin: 0 auto;
       max-width: 600px;
     }
@@ -724,7 +758,9 @@ a, button {
     .faq-section {
       width: 100%;
       margin-top: 60px;
-      animation: fadeInUp 0.8s ease-out 1.3s both;
+      /* Make sure the FAQ section is visible */
+      display: block;
+      visibility: visible;
     }
 
     .faq-title {
@@ -759,21 +795,10 @@ a, button {
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       transition: all 0.3s ease;
-      animation: fadeInUp 0.6s ease-out;
+      display: block;
+      visibility: visible;
     }
-
-    .faq-item:nth-child(1) {
-      animation-delay: 1.4s;
-    }
-
-    .faq-item:nth-child(2) {
-      animation-delay: 1.5s;
-    }
-
-    .faq-item:nth-child(3) {
-      animation-delay: 1.6s;
-    }
-
+    
     .faq-item:hover {
       background: rgba(255, 255, 255, 0.08);
       border-color: rgba(160, 160, 170, 0.3);
@@ -819,6 +844,10 @@ a, button {
     .faq-item.active .faq-answer {
       max-height: 500px;
       padding: 0 24px 20px 24px;
+    }
+
+    .faq-item.active .faq-answer-text {
+      display: block;
     }
 
     .faq-answer-text {
