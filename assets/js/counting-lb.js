@@ -3,6 +3,7 @@ let currentPage = 1;
 let leaderboardData = [];
 const itemsPerPage = 10;
 
+// expectionLinks gose here:
 const exceptionLinks = [
     'https://discord.gg/avrjx6hsQC'
 ];
