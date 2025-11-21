@@ -3,6 +3,10 @@ let currentPage = 1;
 let leaderboardData = [];
 const itemsPerPage = 10;
 
+const exceptionLinks = [
+    'https://discord.gg/avrjx6hsQC'
+];
+
 function containsDiscordUrl(serverName) {
     if (!serverName) return false;
 
@@ -21,7 +25,7 @@ function containsDiscordUrl(serverName) {
 }
 
 function filterLeaderboardData(data) {
-    return data.filter(server => !containsDiscordUrl(server.serverName));
+    return data.filter(server => !containsDiscordUrl(server.serverName) || exceptionLinks.some(link => server.serverName.includes(link)));
 }
 
 function animateCounter(element, target, duration = 2000) {
