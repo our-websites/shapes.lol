@@ -94,4 +94,4 @@ document.getElementById('next-page').addEventListener('click', () => {
     }
 });
 
-fetchLeaderboard();setInterval(fetchCommands,10000);
+fetchCommands();setInterval(fetchCommands,10000);
