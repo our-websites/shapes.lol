@@ -66,7 +66,7 @@ function displayPage(page) {
 }
 
 // Fetch commands from "https://bot.shapes.lol/commands"
-async function fetchLeaderboard(){
+async function fetchCommands(){
     try{
         const r = await fetch('https://bot.shapes.lol/commands');
         const d = await r.json();
@@ -86,7 +86,7 @@ document.getElementById('prev-page').addEventListener('click', () => {
 });
 
 document.getElementById('next-page').addEventListener('click', () => {
-    const totalPages = Math.ceil(CommandData.length / CommandsPerPage);
+    const totalPages = Math.ceil(CommandsData.length / CommandsPerPage);
     if (currentPage < totalPages) {
         currentPage++;
         updatePaginationControls();
@@ -94,4 +94,4 @@ document.getElementById('next-page').addEventListener('click', () => {
     }
 });
 
-fetchLeaderboard();setInterval(fetchLeaderboard,10000);
+fetchLeaderboard();setInterval(fetchCommands,10000);
