@@ -9,20 +9,10 @@
   --primary-dark: #4f46e5;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(99, 102, 241, 0.4) var(--bg-1);
-}
-
 html, body {
-  height: 100%;
-  margin: 0;
   font-family: "Stack Sans Notch", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: radial-gradient(1200px 700px at 50% 85%, rgba(40, 40, 45, 0.25), transparent 15%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
   color: var(--white);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
@@ -46,7 +36,6 @@ body::before {
 
 .wrap {
   max-width: 880px;
-  margin: 0 auto;
   padding: 20px 16px 60px;
   flex: 1;
   display: flex;
@@ -65,7 +54,6 @@ body::before {
   font-family: "Stack Sans Notch", "Poppins", "Inter", system-ui;
   font-weight: 800;
   line-height: 0.95;
-  margin: 0 auto 18px;
   color: var(--white);
   letter-spacing: -1px;
   max-width: 780px;
@@ -82,7 +70,6 @@ body::before {
 }
 
 .sub {
-  margin: 0 auto 28px;
   max-width: 680px;
   font-size: clamp(12px, 3vw, 18px);
   color: var(--muted);
@@ -96,7 +83,6 @@ body::before {
   gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 24px;
 }
 
 .button-style {
@@ -184,9 +170,6 @@ a, button {
   user-select: none;
   -webkit-user-select: none;
 }
-  .topbar {
-    margin: 16px auto 12px auto;
-  }
 
   .hero {
     padding: 32px 12px 16px;
