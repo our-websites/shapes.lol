@@ -22,3 +22,5 @@ async function FetchCommands() {
     console.error("Failed To Get Commands:", e);
   }
 }
+
+FetchCommands();
