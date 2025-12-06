@@ -5,7 +5,7 @@ async function FetchCommands() {
   try {
     const data = await fetch("https://bot.shapes.lol/commands");
     let commands = await data.json();
-    commands.forEach((cmd) => {
+    for (const cmd of commands) {
       const cmd_clone = command_template.cloneNode(true);
 
       console.log(cmd.name);
@@ -26,7 +26,7 @@ async function FetchCommands() {
 
       cmd_clone.hidden = false;
       command_container.appendChild(cmd_clone);
-    });
+    };
   } catch (e) {
     console.error("Failed To Get Commands:", e);
   }
