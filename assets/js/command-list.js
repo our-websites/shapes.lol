@@ -3,8 +3,8 @@ const command_template = document.getElementById("command-template");
 
 async function FetchCommands() {
   try {
-    let commands = fetch("https://bot.shapes.lol/commands");
-    commands = commands.json();
+    const data = await fetch("https://bot.shapes.lol/commands");
+    let commands = await data.json();
     commands.forEach((cmd) => {
       const cmd_clone = command_template.cloneNode(true);
 
