@@ -54,9 +54,9 @@ function displayPage(page) {
         const fragment = command_template.content.cloneNode(true);
         const card = fragment.querySelector('.command-card');
         if (card) {
-            card.querySelector('.command-name').textContent = cmd.name || "Null name";
-            card.querySelector('.command-description').textContent = cmd.description || "Null description";
-            card.querySelector('.command-type').textContent = cmd.type || "Null type";
+            card.querySelector('.command-name').textContent = cmd.name || "Unknown";
+            card.querySelector('.command-description').textContent = cmd.description || "";
+            card.querySelector('.command-type').textContent = cmd.type || "Unknown Type";
         }
         command_holder.appendChild(fragment);
     });
