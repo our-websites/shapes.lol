@@ -22,7 +22,7 @@ async function FetchCommands() {
 
       cmd_clone.querySelector("#command-name").textContent = cmd.name;
       cmd_clone.querySelector("#command-description").textContent = cmd.description;
-      cmd_clone.querySelector("#cmmand-type").textContent = cmd.type;
+      cmd_clone.querySelector("#command-type").textContent = cmd.type;
 
       cmd_clone.hidden = false;
       command_container.appendChild(cmd_clone);
