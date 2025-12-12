@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelogs</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/changelogs.css">
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn.shapes.lol/shapes/favicon.ico">
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#111111">
+    <meta property="og:image" content="https://cdn.shapes.lol/shapes/logosmall.png" />
+    <meta property="og:title" content="Shapes - Changelogs">
+    <meta property="og:description" content="View the latest updates, improvements, and changes to Shapes Discord Bot.">
+</head>
+<body>
+    <div class="topbar">
+        <div class="brand-dot">
+            <a href="/">
+                <img src="https://cdn.shapes.lol/shapes/favicon.ico" alt="Shapes Logo" />
+            </a>
+        </div>
+        <div class="header-nav">
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/commands">Commands</a>
+                <a href="/changelogs">Changelogs</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="hero">
+            <h1 class="headline">
+                <span class="muted">Version</span> History
+            </h1>
+            <p class="sub">
+                Explore all the latest updates, improvements, and enhancements made to Shapes Discord Bot. 
+                Stay informed about what's new and what's been fixed.
+            </p>
+        </div>
+
+        <!-- Markdown Content Section -->
+        <div class="markdown-section">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading changelogs...</p>
+            </div>
+            <div id="markdown-content" class="markdown-content"></div>
+        </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="simple-footer">
+        <p>&copy; 2025 Shapes Discord Bot. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/commands">Commands</a>
+            <a href="/changelogs">Changelogs</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </footer>
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <!-- Markdown Parser & Syntax Highlighting -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+    <!-- Application Scripts -->
+    <script src="/assets/js/animation.js" defer></script>
+    <script src="/assets/js/changelogs.js" defer></script>
+</body>
+</html>
