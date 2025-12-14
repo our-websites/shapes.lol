@@ -1,1 +1,199 @@
-const _0x74bbe2=_0x3539;(function(_0x5c90fe,_0x35a7ae){const _0x1e0326=_0x3539,_0x5956dc=_0x5c90fe();while(!![]){try{const _0x52ecd8=-parseInt(_0x1e0326(0xfa))/0x1+-parseInt(_0x1e0326(0x134))/0x2*(parseInt(_0x1e0326(0x135))/0x3)+parseInt(_0x1e0326(0x112))/0x4+-parseInt(_0x1e0326(0x129))/0x5+parseInt(_0x1e0326(0x139))/0x6*(parseInt(_0x1e0326(0x122))/0x7)+parseInt(_0x1e0326(0x10d))/0x8*(-parseInt(_0x1e0326(0xef))/0x9)+parseInt(_0x1e0326(0x124))/0xa;if(_0x52ecd8===_0x35a7ae)break;else _0x5956dc['push'](_0x5956dc['shift']());}catch(_0x51f612){_0x5956dc['push'](_0x5956dc['shift']());}}}(_0x22a6,0x2a734));const _0x3bdc4a=(function(){let _0x1044bc=!![];return function(_0x1b0816,_0x16800d){const _0x447fa6=_0x1044bc?function(){const _0x1f7adc=_0x3539;if(_0x16800d){const _0x384076=_0x16800d[_0x1f7adc(0x11d)](_0x1b0816,arguments);return _0x16800d=null,_0x384076;}}:function(){};return _0x1044bc=![],_0x447fa6;};}()),_0x1205f2=_0x3bdc4a(this,function(){const _0x38afed=_0x3539,_0x40dbf7=function(){const _0x462522=_0x3539;let _0x362ce6;try{_0x362ce6=Function(_0x462522(0xf2)+_0x462522(0x12b)+');')();}catch(_0x4ceacd){_0x362ce6=window;}return _0x362ce6;},_0x26c2d4=_0x40dbf7(),_0x4963de=new RegExp(_0x38afed(0x105),'g'),_0x138c1f='sDgTnhKapes.lkJolZBqz;mXobfAUyRusLJcPLatvUEIdKor.iAoqvjXRmWPxTwCZVTTjGvyJXFnCDk'['replace'](_0x4963de,'')[_0x38afed(0x10b)](';');let _0x15af44,_0x59ca9e,_0x339c7e,_0x37c47a;const _0x4dfe70=function(_0x4789af,_0x2c8615,_0x34ddef){const _0x135d53=_0x38afed;if(_0x4789af['length']!=_0x2c8615)return![];for(let _0x509058=0x0;_0x509058<_0x2c8615;_0x509058++){for(let _0x507a50=0x0;_0x507a50<_0x34ddef[_0x135d53(0xf9)];_0x507a50+=0x2){if(_0x509058==_0x34ddef[_0x507a50]&&_0x4789af[_0x135d53(0x12d)](_0x509058)!=_0x34ddef[_0x507a50+0x1])return![];}}return!![];},_0x591678=function(_0x11c654,_0x73bdfd,_0xd20d9f){return _0x4dfe70(_0x73bdfd,_0xd20d9f,_0x11c654);},_0x34638d=function(_0x1c98dc,_0x682308,_0x16a994){return _0x591678(_0x682308,_0x1c98dc,_0x16a994);},_0xba0ef2=function(_0xd924ce,_0x4c5947,_0xf1f241){return _0x34638d(_0x4c5947,_0xf1f241,_0xd924ce);};for(let _0x3f9819 in _0x26c2d4){if(_0x4dfe70(_0x3f9819,0x8,[0x7,0x74,0x5,0x65,0x3,0x75,0x0,0x64])){_0x15af44=_0x3f9819;break;}}for(let _0x537f90 in _0x26c2d4[_0x15af44]){if(_0xba0ef2(0x6,_0x537f90,[0x5,0x6e,0x0,0x64])){_0x59ca9e=_0x537f90;break;}}for(let _0x4285e6 in _0x26c2d4[_0x15af44]){if(_0x34638d(_0x4285e6,[0x7,0x6e,0x0,0x6c],0x8)){_0x339c7e=_0x4285e6;break;}}if(!('~'>_0x59ca9e))for(let _0x560c9a in _0x26c2d4[_0x15af44][_0x339c7e]){if(_0x591678([0x7,0x65,0x0,0x68],_0x560c9a,0x8)){_0x37c47a=_0x560c9a;break;}}if(!_0x15af44||!_0x26c2d4[_0x15af44])return;const _0x34fc54=_0x26c2d4[_0x15af44][_0x59ca9e],_0x30ca1b=!!_0x26c2d4[_0x15af44][_0x339c7e]&&_0x26c2d4[_0x15af44][_0x339c7e][_0x37c47a],_0x530290=_0x34fc54||_0x30ca1b;if(!_0x530290)return;let _0x2629ea=![];for(let _0x1395d3=0x0;_0x1395d3<_0x138c1f[_0x38afed(0xf9)];_0x1395d3++){const _0x4029da=_0x138c1f[_0x1395d3],_0x4cce3f=_0x4029da[0x0]===String[_0x38afed(0x130)](0x2e)?_0x4029da['slice'](0x1):_0x4029da,_0xe20b2d=_0x530290['length']-_0x4cce3f[_0x38afed(0xf9)],_0x40d84f=_0x530290[_0x38afed(0xf0)](_0x4cce3f,_0xe20b2d),_0x120429=_0x40d84f!==-0x1&&_0x40d84f===_0xe20b2d;_0x120429&&((_0x530290[_0x38afed(0xf9)]==_0x4029da[_0x38afed(0xf9)]||_0x4029da[_0x38afed(0xf0)]('.')===0x0)&&(_0x2629ea=!![]));}if(!_0x2629ea){const _0x189d44=new RegExp(_0x38afed(0x11e),'g'),_0x276616=_0x38afed(0x13d)[_0x38afed(0x120)](_0x189d44,'');_0x26c2d4[_0x15af44][_0x339c7e]=_0x276616;}});function _0x22a6(){const _0x214596=['https://bot.shapes.lol/botinfo','length','323596fseIOr','className','map','userCount','serverName','.counter-current-','Serving\x20','Users','&#039;','toLocaleString','min','[DgTnKkJZBqzmXAUyRLJPLvUEIdKAqvjXRmWPxTwCZVTTjGvyJXFnCDk]','Initializing\x20data\x20fetching','appendChild','highest','current','Servers','split','function','2019288yvQjkQ','smooth','leaderboard-container','createElement','preventDefault','815912LMdFzc','error','servers','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-rank\x20','innerHTML','textContent','leaderboard-card','querySelector','getAttribute','https://bot.shapes.lol/clb','users','apply','[dHwLcVKqpBDMQdiBPwRKcXLifV]','slice','replace','now','385jaNLVi','forEach','7972440mETPte','values','rank-','all','https://bot.shapes.lol/count/users','1615860AgVYPb','Failed\x20to\x20fetch\x20bot\x20info:','{}.constructor(\x22return\x20this\x22)(\x20)','&amp;','charCodeAt','pow','isArray','fromCharCode','&lt;','querySelectorAll','getElementById','178PLMyuZ','6129NhgWDG','log','\x20users','\x22>0</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22card-stat-label\x22>Highest</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22card-stat-value\x20counter-highest-','27672MUiSrl','json','addEventListener','https://bot.shapes.lol/count/servers','dHwabLcVKoutq:bplankBDMQdiBPwRKcXLifV','click','serverCount','Failed\x20to\x20fetch\x20leaderboard:','\x20servers','\x22>0</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','Leaderboard','&quot;','floor','9zTOfth','indexOf','highestnumber','return\x20(function()\x20','Unknown\x20Server','currentnumber','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-server-name\x22>','scrollIntoView','div'];_0x22a6=function(){return _0x214596;};return _0x22a6();}_0x1205f2(),document[_0x74bbe2(0x132)]('a[href^=\x22#\x22]')['forEach'](_0x54db80=>{const _0x4defaf=_0x74bbe2;_0x54db80[_0x4defaf(0x13b)](_0x4defaf(0x13e),function(_0x905693){const _0x1b1d86=_0x4defaf;_0x905693[_0x1b1d86(0x111)](),document[_0x1b1d86(0x119)](this[_0x1b1d86(0x11a)]('href'))[_0x1b1d86(0xf6)]({'behavior':_0x1b1d86(0x10e)});});});function _0x3539(_0x226fd6,_0x9974e2){_0x226fd6=_0x226fd6-0xe8;const _0x109380=_0x22a6();let _0x1205f2=_0x109380[_0x226fd6];return _0x1205f2;}const animateCounter=(_0x5e5649,_0xad0ef0,_0x33cb93=0x5dc)=>{const _0x1f88da=_0x74bbe2,_0x3618a2=Date[_0x1f88da(0x121)](),_0x417900=0x0,_0x4b08a6=parseInt(_0xad0ef0);if(isNaN(_0x4b08a6)){_0x5e5649['textContent']=_0xad0ef0;return;}const _0x3b768a=()=>{const _0x46a204=_0x1f88da,_0x5e1573=Date['now'](),_0x4880ba=Math[_0x46a204(0x104)]((_0x5e1573-_0x3618a2)/_0x33cb93,0x1),_0x401c11=0x1-Math[_0x46a204(0x12e)](0x1-_0x4880ba,0x3),_0x224e49=Math[_0x46a204(0xee)](_0x417900+(_0x4b08a6-_0x417900)*_0x401c11);_0x5e5649[_0x46a204(0x117)]=_0x224e49[_0x46a204(0x103)](),_0x4880ba<0x1&&requestAnimationFrame(_0x3b768a);};_0x3b768a();},displayTopThree=_0x3ef5d5=>{const _0x583a77=_0x74bbe2,_0x5196ce=document[_0x583a77(0x133)](_0x583a77(0x10f));_0x5196ce[_0x583a77(0x116)]='';let _0xe36055=[];if(Array[_0x583a77(0x12f)](_0x3ef5d5))_0xe36055=_0x3ef5d5;else{if(_0x3ef5d5[_0x583a77(0xec)])_0xe36055=Array['from'](_0x3ef5d5[_0x583a77(0xec)])[_0x583a77(0xfc)](([,_0x466066])=>_0x466066);else typeof _0x3ef5d5==='object'&&_0x3ef5d5!==null&&(_0xe36055=Object[_0x583a77(0x125)](_0x3ef5d5));}const _0x5aa2b2=_0xe36055[_0x583a77(0x11f)](0x0,0x3);_0x5aa2b2[_0x583a77(0x123)]((_0x522912,_0x1bf2c6)=>{const _0x4bbc82=_0x583a77,_0x4e11ae=document[_0x4bbc82(0x110)](_0x4bbc82(0xf7));_0x4e11ae[_0x4bbc82(0xfb)]=_0x4bbc82(0x118);const _0x4b11f8=_0x4bbc82(0x126)+(_0x1bf2c6+0x1),_0x278952=_0x1bf2c6+0x1;_0x4e11ae['innerHTML']=_0x4bbc82(0x115)+_0x4b11f8+'\x22>#'+_0x278952+_0x4bbc82(0xf5)+escapeHtml(_0x522912[_0x4bbc82(0xfe)]||_0x522912['name']||_0x4bbc82(0xf3))+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-stats\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22card-stat-label\x22>Current</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22card-stat-value\x20counter-current-'+_0x1bf2c6+_0x4bbc82(0x138)+_0x1bf2c6+_0x4bbc82(0xeb),_0x5196ce[_0x4bbc82(0x107)](_0x4e11ae);const _0x37c517=_0x4e11ae[_0x4bbc82(0x119)](_0x4bbc82(0xff)+_0x1bf2c6),_0xc18ac2=_0x4e11ae[_0x4bbc82(0x119)]('.counter-highest-'+_0x1bf2c6);animateCounter(_0x37c517,_0x522912[_0x4bbc82(0xf4)]||_0x522912[_0x4bbc82(0x109)]||0x0),animateCounter(_0xc18ac2,_0x522912[_0x4bbc82(0xf1)]||_0x522912[_0x4bbc82(0x108)]||0x0);});},escapeHtml=_0x430af3=>{const _0x250722=_0x74bbe2,_0x1e47f2={'&':_0x250722(0x12c),'<':_0x250722(0x131),'>':'&gt;','\x22':_0x250722(0xed),'\x27':_0x250722(0x102)};return _0x430af3[_0x250722(0x120)](/[&<>"']/g,_0x3e6f04=>_0x1e47f2[_0x3e6f04]);},fetchLeaderboard=async()=>{const _0x52377f=_0x74bbe2;try{const _0x3f2a46=await fetch(_0x52377f(0x11b)),_0xdcc76e=await _0x3f2a46['json']();displayTopThree(_0xdcc76e);}catch(_0x1bdc91){console[_0x52377f(0x113)](_0x52377f(0xe9),_0x1bdc91);}},fetchBotInfo=async()=>{const _0x31c0bb=_0x74bbe2;try{const _0x4c23ff=await fetch(_0x31c0bb(0xf8)),_0x110ee9=await _0x4c23ff[_0x31c0bb(0x13a)](),_0x30d72d=document[_0x31c0bb(0x133)](_0x31c0bb(0x11c)),_0x3d4ef5=document['getElementById'](_0x31c0bb(0x114)),_0x348c66=_0x110ee9[_0x31c0bb(0x101)]||_0x110ee9['users']||_0x110ee9[_0x31c0bb(0xfd)]||0x0,_0x327f1e=_0x110ee9[_0x31c0bb(0x10a)]||_0x110ee9[_0x31c0bb(0x114)]||_0x110ee9['guilds']||_0x110ee9[_0x31c0bb(0xe8)]||0x0;_0x30d72d&&_0x348c66!==undefined&&(animateCounter(_0x30d72d,_0x348c66),console[_0x31c0bb(0x136)](_0x31c0bb(0x100)+_0x348c66['toLocaleString']()+_0x31c0bb(0x137)),typeof animateStatsUpdate===_0x31c0bb(0x10c)&&animateStatsUpdate()),_0x3d4ef5&&_0x327f1e!==undefined&&(animateCounter(_0x3d4ef5,_0x327f1e),console[_0x31c0bb(0x136)](_0x31c0bb(0x100)+_0x327f1e['toLocaleString']()+'\x20servers'),typeof animateStatsUpdate===_0x31c0bb(0x10c)&&animateStatsUpdate());}catch(_0x4c3fcd){console[_0x31c0bb(0x113)](_0x31c0bb(0x12a),_0x4c3fcd),fetchStatsAlternative();}},fetchStatsAlternative=async()=>{const _0x4daaf4=_0x74bbe2;try{const [_0x55f44d,_0x1fb6e1]=await Promise[_0x4daaf4(0x127)]([fetch(_0x4daaf4(0x128)),fetch(_0x4daaf4(0x13c))]),_0x39655c=await _0x55f44d['json'](),_0x4d5cc7=await _0x1fb6e1[_0x4daaf4(0x13a)](),_0x2959a9=document[_0x4daaf4(0x133)](_0x4daaf4(0x11c)),_0x42be91=document[_0x4daaf4(0x133)]('servers');let _0x32b2b1=![],_0x319646=![];if(_0x2959a9&&_0x39655c[_0x4daaf4(0x101)]!==undefined)animateCounter(_0x2959a9,_0x39655c['Users']),console[_0x4daaf4(0x136)](_0x4daaf4(0x100)+_0x39655c['Users'][_0x4daaf4(0x103)]()+_0x4daaf4(0x137)),_0x32b2b1=!![];else _0x2959a9&&_0x39655c[_0x4daaf4(0x11c)]!==undefined&&(animateCounter(_0x2959a9,_0x39655c[_0x4daaf4(0x11c)]),console['log'](_0x4daaf4(0x100)+_0x39655c[_0x4daaf4(0x11c)]['toLocaleString']()+'\x20users'),_0x32b2b1=!![]);if(_0x42be91&&_0x4d5cc7[_0x4daaf4(0x10a)]!==undefined)animateCounter(_0x42be91,_0x4d5cc7[_0x4daaf4(0x10a)]),console['log'](_0x4daaf4(0x100)+_0x4d5cc7[_0x4daaf4(0x10a)][_0x4daaf4(0x103)]()+_0x4daaf4(0xea)),_0x319646=!![];else _0x42be91&&_0x4d5cc7['servers']!==undefined&&(animateCounter(_0x42be91,_0x4d5cc7['servers']),console[_0x4daaf4(0x136)](_0x4daaf4(0x100)+_0x4d5cc7['servers'][_0x4daaf4(0x103)]()+_0x4daaf4(0xea)),_0x319646=!![]);(_0x32b2b1||_0x319646)&&typeof animateStatsUpdate===_0x4daaf4(0x10c)&&animateStatsUpdate();}catch(_0x3c368f){console[_0x4daaf4(0x113)]('Failed\x20to\x20fetch\x20stats:',_0x3c368f);}};console['log'](_0x74bbe2(0x106)),fetchLeaderboard(),fetchBotInfo(),setInterval(fetchLeaderboard,0x3a98),setInterval(fetchBotInfo,0x7530);
+// Add smooth scroll behavior
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Counting leaderboard fetch
+const animateCounter = (element, target, duration = 1500) => {
+    const start = Date.now();
+    const startValue = 0;
+    const endValue = parseInt(target);
+    
+    if (isNaN(endValue)) {
+        element.textContent = target;
+        return;
+    }
+
+    const update = () => {
+        const now = Date.now();
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(startValue + (endValue - startValue) * eased);
+        element.textContent = current.toLocaleString();
+        
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        }
+    };
+    
+    update();
+};
+
+const displayTopThree = (data) => {
+    const container = document.getElementById('leaderboard-container');
+    container.innerHTML = '';
+
+    // Check if data is in the expected format
+    let leaderboardData = [];
+    if (Array.isArray(data)) {
+        leaderboardData = data;
+    } else if (data.Leaderboard) {
+        // Handle the case where data is an object with a Leaderboard property
+        leaderboardData = Array.from(data.Leaderboard).map(([, server]) => server);
+    } else if (typeof data === 'object' && data !== null) {
+        // Handle other object formats
+        leaderboardData = Object.values(data);
+    }
+
+    const topThree = leaderboardData.slice(0, 3);
+
+    topThree.forEach((server, index) => {
+        const card = document.createElement('div');
+        card.className = 'leaderboard-card';
+        
+        const rankClass = `rank-${index + 1}`;
+        const rankNum = index + 1;
+
+        card.innerHTML = `
+          <div class="card-rank ${rankClass}">#${rankNum}</div>
+          <div class="card-content">
+            <div class="card-server-name">${escapeHtml(server.serverName || server.name || 'Unknown Server')}</div>
+            <div class="card-stats">
+              <div class="card-stat-row">
+                <span class="card-stat-label">Current</span>
+                <span class="card-stat-value counter-current-${index}">0</span>
+              </div>
+              <div class="card-stat-row">
+                <span class="card-stat-label">Highest</span>
+                <span class="card-stat-value counter-highest-${index}">0</span>
+              </div>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(card);
+
+        const currentEl = card.querySelector(`.counter-current-${index}`);
+        const highestEl = card.querySelector(`.counter-highest-${index}`);
+
+        animateCounter(currentEl, server.currentnumber || server.current || 0);
+        animateCounter(highestEl, server.highestnumber || server.highest || 0);
+    });
+};
+
+const escapeHtml = (text) => {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, m => map[m]);
+};
+
+const fetchLeaderboard = async () => {
+    try {
+        const response = await fetch('https://api.shapes.lol/clb');
+        const data = await response.json();
+        displayTopThree(data);
+    } catch (error) {
+        console.error('Failed to fetch leaderboard:', error);
+    }
+};
+
+const fetchBotInfo = async () => {
+    try {
+        const response = await fetch('https://api.shapes.lol/botinfo');
+        const data = await response.json();
+        
+        const usersEl = document.getElementById('users');
+        const serversEl = document.getElementById('servers');
+
+        // Handle different data formats from botinfo endpoint
+        const users = data.Users || data.users || data.userCount || 0;
+        const servers = data.Servers || data.servers || data.guilds || data.serverCount || 0;
+
+        if (usersEl && users !== undefined) {
+            animateCounter(usersEl, users);
+            console.log(`Serving ${users.toLocaleString()} users`);
+            // Animate stats update if the function exists
+            if (typeof animateStatsUpdate === 'function') {
+                animateStatsUpdate();
+            }
+        }
+        if (serversEl && servers !== undefined) {
+            animateCounter(serversEl, servers);
+            console.log(`Serving ${servers.toLocaleString()} servers`);
+            // Animate stats update if the function exists
+            if (typeof animateStatsUpdate === 'function') {
+                animateStatsUpdate();
+            }
+        }
+    } catch (error) {
+        console.error('Failed to fetch bot info:', error);
+        // Fallback to alternative endpoints
+        fetchStatsAlternative();
+    }
+};
+
+// Alternative endpoints if botinfo doesn't work
+const fetchStatsAlternative = async () => {
+    try {
+        const [usersResponse, serversResponse] = await Promise.all([
+            fetch('https://api.shapes.lol/count/users'),
+            fetch('https://api.shapes.lol/count/servers')
+        ]);
+
+        const usersData = await usersResponse.json();
+        const serversData = await serversResponse.json();
+        
+        const usersEl = document.getElementById('users');
+        const serversEl = document.getElementById('servers');
+
+        // Handle different data formats from count endpoints
+        let usersUpdated = false;
+        let serversUpdated = false;
+        
+        if (usersEl && usersData.Users !== undefined) {
+            animateCounter(usersEl, usersData.Users);
+            console.log(`Serving ${usersData.Users.toLocaleString()} users`);
+            usersUpdated = true;
+        } else if (usersEl && usersData.users !== undefined) {
+            animateCounter(usersEl, usersData.users);
+            console.log(`Serving ${usersData.users.toLocaleString()} users`);
+            usersUpdated = true;
+        }
+        
+        if (serversEl && serversData.Servers !== undefined) {
+            animateCounter(serversEl, serversData.Servers);
+            console.log(`Serving ${serversData.Servers.toLocaleString()} servers`);
+            serversUpdated = true;
+        } else if (serversEl && serversData.servers !== undefined) {
+            animateCounter(serversEl, serversData.servers);
+            console.log(`Serving ${serversData.servers.toLocaleString()} servers`);
+            serversUpdated = true;
+        }
+        
+        // Animate stats update if any values were updated
+        if ((usersUpdated || serversUpdated) && typeof animateStatsUpdate === 'function') {
+            animateStatsUpdate();
+        }
+    } catch (error) {
+        console.error('Failed to fetch stats:', error);
+    }
+};
+
+// Initialize data fetching
+console.log('Initializing data fetching');
+fetchLeaderboard();
+fetchBotInfo();
+
+// intervals for updating data
+setInterval(fetchLeaderboard, 15000);
+setInterval(fetchBotInfo, 30000);
