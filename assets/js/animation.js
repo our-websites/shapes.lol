@@ -108,3 +108,46 @@ function animateStatsUpdate() {
         stagger: 0.1
     });
 }
+
+
+// FOR 404.html simple gsap animation
+
+
+gsap.from(".error-code", {
+      duration: 1.2,
+      scale: 0.5,
+      opacity: 0,
+      ease: "back.out(1.7)"
+    });
+    
+    gsap.from(".error-title", {
+      duration: 0.8,
+      y: 30,
+      opacity: 0,
+      ease: "power2.out",
+      delay: 0.3
+    });
+    
+    gsap.from(".error-message", {
+      duration: 0.8,
+      y: 30,
+      opacity: 0,
+      ease: "power2.out",
+      delay: 0.5
+    });
+    
+    gsap.from(".error-actions", {
+      duration: 0.8,
+      y: 30,
+      opacity: 0,
+      ease: "power2.out",
+      delay: 0.7
+    });
+    
+    gsap.from(".quick-links", {
+      duration: 0.8,
+      y: 30,
+      opacity: 0,
+      ease: "power2.out",
+      delay: 0.9
+    });
