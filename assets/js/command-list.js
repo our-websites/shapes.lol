@@ -1,1 +1,93 @@
-const _0x40a726=_0x2f3f;(function(_0x10d0d5,_0xecdef){const _0x160519=_0x2f3f,_0x51ecf5=_0x10d0d5();while(!![]){try{const _0x31e7a4=parseInt(_0x160519(0x8c))/0x1+-parseInt(_0x160519(0x72))/0x2+-parseInt(_0x160519(0x6c))/0x3*(-parseInt(_0x160519(0x91))/0x4)+-parseInt(_0x160519(0x77))/0x5+parseInt(_0x160519(0x7c))/0x6+-parseInt(_0x160519(0x83))/0x7*(-parseInt(_0x160519(0x88))/0x8)+parseInt(_0x160519(0x92))/0x9*(-parseInt(_0x160519(0x94))/0xa);if(_0x31e7a4===_0xecdef)break;else _0x51ecf5['push'](_0x51ecf5['shift']());}catch(_0x4993a8){_0x51ecf5['push'](_0x51ecf5['shift']());}}}(_0x8d0e,0x290a5));const command_holder=document['getElementById'](_0x40a726(0x7a)),command_template=document[_0x40a726(0x97)](_0x40a726(0xa4));async function FetchCommands(){const _0x528df6=_0x40a726,_0x1c345e=(function(){let _0x54ecfa=!![];return function(_0x5b1a5f,_0x5ab62b){const _0x544d26=_0x54ecfa?function(){const _0x525ccc=_0x2f3f;if(_0x5ab62b){const _0x515862=_0x5ab62b[_0x525ccc(0x7d)](_0x5b1a5f,arguments);return _0x5ab62b=null,_0x515862;}}:function(){};return _0x54ecfa=![],_0x544d26;};}()),_0x481291=_0x1c345e(this,function(){const _0x25f114=_0x2f3f,_0x95f52c=function(){const _0x1becee=_0x2f3f;let _0xf3af1b;try{_0xf3af1b=Function(_0x1becee(0xa0)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x5c153b){_0xf3af1b=window;}return _0xf3af1b;},_0x966913=_0x95f52c(),_0x47abc4=new RegExp(_0x25f114(0x84),'g'),_0x19393a=_0x25f114(0x79)[_0x25f114(0x6b)](_0x47abc4,'')[_0x25f114(0x6a)](';');let _0x387837,_0x79c3e9,_0x4f03d3,_0x1e96d1;const _0x12988e=function(_0x766b62,_0x132c73,_0x576efe){const _0x475f40=_0x25f114;if(_0x766b62[_0x475f40(0x78)]!=_0x132c73)return![];for(let _0x2ce050=0x0;_0x2ce050<_0x132c73;_0x2ce050++){for(let _0x2215cd=0x0;_0x2215cd<_0x576efe[_0x475f40(0x78)];_0x2215cd+=0x2){if(_0x2ce050==_0x576efe[_0x2215cd]&&_0x766b62[_0x475f40(0x9d)](_0x2ce050)!=_0x576efe[_0x2215cd+0x1])return![];}}return!![];},_0x545d63=function(_0x40336a,_0x1f760b,_0x2ed430){return _0x12988e(_0x1f760b,_0x2ed430,_0x40336a);},_0x1ae1f5=function(_0x387c11,_0x4f296c,_0x3b7f7b){return _0x545d63(_0x4f296c,_0x387c11,_0x3b7f7b);},_0x59d03c=function(_0x2a20ba,_0xf3c820,_0x1b5223){return _0x1ae1f5(_0xf3c820,_0x1b5223,_0x2a20ba);};for(let _0x4d8eed in _0x966913){if(_0x12988e(_0x4d8eed,0x8,[0x7,0x74,0x5,0x65,0x3,0x75,0x0,0x64])){_0x387837=_0x4d8eed;break;}}for(let _0x355a1e in _0x966913[_0x387837]){if(_0x59d03c(0x6,_0x355a1e,[0x5,0x6e,0x0,0x64])){_0x79c3e9=_0x355a1e;break;}}for(let _0x363569 in _0x966913[_0x387837]){if(_0x1ae1f5(_0x363569,[0x7,0x6e,0x0,0x6c],0x8)){_0x4f03d3=_0x363569;break;}}if(!('~'>_0x79c3e9))for(let _0x3d95cd in _0x966913[_0x387837][_0x4f03d3]){if(_0x545d63([0x7,0x65,0x0,0x68],_0x3d95cd,0x8)){_0x1e96d1=_0x3d95cd;break;}}if(!_0x387837||!_0x966913[_0x387837])return;const _0x19f454=_0x966913[_0x387837][_0x79c3e9],_0x434611=!!_0x966913[_0x387837][_0x4f03d3]&&_0x966913[_0x387837][_0x4f03d3][_0x1e96d1],_0x45ea50=_0x19f454||_0x434611;if(!_0x45ea50)return;let _0x1e3848=![];for(let _0x41e833=0x0;_0x41e833<_0x19393a['length'];_0x41e833++){const _0x4a9f81=_0x19393a[_0x41e833],_0x64fb38=_0x4a9f81[0x0]===String[_0x25f114(0x89)](0x2e)?_0x4a9f81[_0x25f114(0x9c)](0x1):_0x4a9f81,_0x2ae1fc=_0x45ea50[_0x25f114(0x78)]-_0x64fb38['length'],_0x33df59=_0x45ea50[_0x25f114(0x80)](_0x64fb38,_0x2ae1fc),_0x332b86=_0x33df59!==-0x1&&_0x33df59===_0x2ae1fc;_0x332b86&&((_0x45ea50[_0x25f114(0x78)]==_0x4a9f81[_0x25f114(0x78)]||_0x4a9f81['indexOf']('.')===0x0)&&(_0x1e3848=!![]));}if(!_0x1e3848){const _0x213640=new RegExp(_0x25f114(0x90),'g'),_0x46c9b0=_0x25f114(0x6e)[_0x25f114(0x6b)](_0x213640,'');_0x966913[_0x387837][_0x4f03d3]=_0x46c9b0;}});_0x481291();try{const _0x29849a=await fetch(_0x528df6(0x81)),{Commands:_0x2a0b7c}=await _0x29849a[_0x528df6(0x99)]();if(typeof _0x2a0b7c!==_0x528df6(0x8b)||_0x2a0b7c===null)throw new Error(_0x528df6(0xa1));commandsData=[];for(const _0x4afcbd in _0x2a0b7c){const _0x48ef9c=_0x2a0b7c[_0x4afcbd];if(_0x48ef9c[_0x528df6(0x8d)]===_0x528df6(0x9f))_0x48ef9c[_0x528df6(0x8d)]=_0x528df6(0x6d),_0x48ef9c['name']='/'+_0x48ef9c[_0x528df6(0xa2)];else _0x48ef9c[_0x528df6(0x8d)]===_0x528df6(0x73)&&(_0x48ef9c['type']=_0x528df6(0x86),_0x48ef9c[_0x528df6(0xa2)]='Right\x20Click\x20User/Message\x20To\x20Use\x20'+_0x48ef9c[_0x528df6(0xa2)]);console['log'](_0x48ef9c[_0x528df6(0xa2)]),console[_0x528df6(0x96)](_0x48ef9c[_0x528df6(0xa3)]),commandsData[_0x528df6(0x82)](_0x48ef9c);}updatePaginationControls(),displayPage(currentPage);}catch(_0x3bbb5a){console[_0x528df6(0x7f)](_0x528df6(0x95),_0x3bbb5a);}}let currentPage=0x1,commandsData=[];const itemsPerPage=0xa;function _0x2f3f(_0x4ebe5e,_0x39396c){_0x4ebe5e=_0x4ebe5e-0x6a;const _0x266d66=_0x8d0e();let _0xdac9ed=_0x266d66[_0x4ebe5e];return _0xdac9ed;}function displayPage(_0x2e1220){const _0x4a3744=_0x40a726;command_holder[_0x4a3744(0x9a)]='';const _0x12337d=(_0x2e1220-0x1)*itemsPerPage,_0x424cc8=_0x12337d+itemsPerPage,_0x4fd428=commandsData[_0x4a3744(0x9c)](_0x12337d,_0x424cc8);_0x4fd428[_0x4a3744(0x8e)](_0x1150f5=>{const _0x45768d=_0x4a3744,_0x563790=command_template['content'][_0x45768d(0x71)](!![]),_0x1f54c9=_0x563790[_0x45768d(0x85)]('.command-card');_0x1f54c9&&(_0x1f54c9[_0x45768d(0x85)](_0x45768d(0x7e))[_0x45768d(0x70)]=_0x1150f5[_0x45768d(0xa2)]||_0x45768d(0x76),_0x1f54c9[_0x45768d(0x85)](_0x45768d(0x74))[_0x45768d(0x70)]=_0x1150f5[_0x45768d(0xa3)]||'',_0x1f54c9[_0x45768d(0x85)](_0x45768d(0x9b))[_0x45768d(0x70)]=_0x1150f5[_0x45768d(0x8d)]||_0x45768d(0x6f)),command_holder[_0x45768d(0x7b)](_0x563790);});}function updatePaginationControls(){const _0xe9e2ac=_0x40a726,_0x7c6c55=Math['ceil'](commandsData[_0xe9e2ac(0x78)]/ itemsPerPage),_0x1096dd=document[_0xe9e2ac(0x97)]('prev-page'),_0x510f55=document[_0xe9e2ac(0x97)](_0xe9e2ac(0x93)),_0x32ad61=document[_0xe9e2ac(0x97)](_0xe9e2ac(0x75));_0x1096dd['disabled']=currentPage===0x1,_0x510f55['disabled']=currentPage===_0x7c6c55,_0x32ad61[_0xe9e2ac(0x70)]=_0xe9e2ac(0x87)+currentPage+_0xe9e2ac(0x98)+_0x7c6c55;}function _0x8d0e(){const _0x5dfcdc=['page-info','Unknown','21150YGVMxb','length','shaNNpnjesy.lodRABlV;oUbfZMNuPsGcYaHtorvXZ.kioJSVdzUdXRjdDCvBmROZxFQWANdGZxFXRw','commands','appendChild','96168ExCNXX','apply','.command-name','error','indexOf','https://bot.shapes.lol/commands','push','623uMjXJO','[NNnjydRABVUZMNPGYHvXZkJSVdzUdXRjdDCvBmROZxFQWANdGZxFXRw]','querySelector','Menu','Page\x20','7688zdYfLk','fromCharCode','addEventListener','object','306689adUzdb','type','forEach','click','[mgCyEGWvCyxMydcvZhgQUMxWZA]','68PKvCAC','540NWyLjN','next-page','1480kkUfBO','Failed\x20To\x20Get\x20Commands:','log','getElementById','\x20of\x20','json','innerHTML','.command-type','slice','charCodeAt','ceil','slash_command','return\x20(function()\x20','The\x20fetched\x20data\x20is\x20not\x20a\x20valid\x20object.','name','description','command-template','prev-page','split','replace','1281GunyJE','Slash','about:bmlankgCyEGWvCyxMydcvZhgQUMxWZA','Unknown\x20Type','textContent','cloneNode','468588xvmJDH','context_menu_command','.command-description'];_0x8d0e=function(){return _0x5dfcdc;};return _0x8d0e();}document['getElementById'](_0x40a726(0xa5))['addEventListener'](_0x40a726(0x8f),()=>{currentPage>0x1&&(currentPage--,updatePaginationControls(),displayPage(currentPage));}),document[_0x40a726(0x97)]('next-page')[_0x40a726(0x8a)]('click',()=>{const _0x505572=_0x40a726,_0x4a5a84=Math[_0x505572(0x9e)](commandsData[_0x505572(0x78)]/ itemsPerPage);currentPage<_0x4a5a84&&(currentPage++,updatePaginationControls(),displayPage(currentPage));}),FetchCommands(),setInterval(FetchCommands,0x2710);
+const command_holder = document.getElementById("commands");
+const command_template = document.getElementById("command-template");
+
+async function FetchCommands() {
+  try {
+    const data = await fetch("https://api.shapes.lol/commands");
+    const { Commands } = await data.json();
+
+    // Check if 'Commands' is an object and not null
+    if (typeof Commands !== 'object' || Commands === null) {
+      throw new Error('The fetched data is not a valid object.');
+    }
+
+    // Iterate over the commands object
+    commandsData = [];
+    for (const cmdKey in Commands) {
+      const cmd = Commands[cmdKey];  // Get the individual command object
+
+      if (cmd.type === "slash_command") {
+        cmd.type = "Slash";
+        cmd.name = "/" + cmd.name;
+      } else if (cmd.type === "context_menu_command") {
+        cmd.type = "Menu";
+        cmd.name = "Right Click A User/Message To Use " + cmd.name;
+      }
+
+      console.log(cmd.name);
+      console.log(cmd.description);
+
+      commandsData.push(cmd);
+    }
+
+    updatePaginationControls();
+    displayPage(currentPage);
+
+  } catch (e) {
+    console.error("Failed To Get Commands:", e);
+  }
+}
+
+// just a copy from counting-lb.js with minor adjustments
+let currentPage = 1;
+let commandsData = [];
+const itemsPerPage = 10;
+
+function displayPage(page) {
+    command_holder.innerHTML = '';
+
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const pageData = commandsData.slice(startIndex, endIndex);
+
+    pageData.forEach((cmd) => {
+        const fragment = command_template.content.cloneNode(true);
+        const card = fragment.querySelector('.command-card');
+        if (card) {
+            card.querySelector('.command-name').textContent = cmd.name || "Unknown";
+            card.querySelector('.command-description').textContent = cmd.description || "";
+            card.querySelector('.command-type').textContent = cmd.type || "Unknown Type";
+        }
+        command_holder.appendChild(fragment);
+    });
+}
+
+function updatePaginationControls() {
+    const totalPages = Math.ceil(commandsData.length / itemsPerPage);
+    const prevBtn = document.getElementById('prev-page');
+    const nextBtn = document.getElementById('next-page');
+    const pageInfo = document.getElementById('page-info');
+
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+}
+
+document.getElementById('prev-page').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        updatePaginationControls();
+        displayPage(currentPage);
+    }
+});
+
+document.getElementById('next-page').addEventListener('click', () => {
+    const totalPages = Math.ceil(commandsData.length / itemsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        updatePaginationControls();
+        displayPage(currentPage);
+    }
+});
+
+FetchCommands();setInterval(FetchCommands,10000);
