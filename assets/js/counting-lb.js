@@ -1,1 +1,126 @@
-const _0x14ad06=_0x2d13;(function(_0x3e3a49,_0x2d0074){const _0x38d692=_0x2d13,_0x318dc5=_0x3e3a49();while(!![]){try{const _0x44410c=parseInt(_0x38d692(0xf9))/0x1+parseInt(_0x38d692(0xf4))/0x2+-parseInt(_0x38d692(0xe0))/0x3+parseInt(_0x38d692(0xf3))/0x4+-parseInt(_0x38d692(0xe8))/0x5*(-parseInt(_0x38d692(0xfa))/0x6)+-parseInt(_0x38d692(0xff))/0x7+parseInt(_0x38d692(0x10b))/0x8*(parseInt(_0x38d692(0x10d))/0x9);if(_0x44410c===_0x2d0074)break;else _0x318dc5['push'](_0x318dc5['shift']());}catch(_0x4590c3){_0x318dc5['push'](_0x318dc5['shift']());}}}(_0x53e0,0x80969));let currentPage=0x1,leaderboardData=[];const itemsPerPage=0xa,exceptionLinks=[_0x14ad06(0xdf)];function containsDiscordUrl(_0x5b6ce2){const _0x4f8f11=_0x14ad06;if(!_0x5b6ce2)return![];const _0x1e5b84=_0x5b6ce2[_0x4f8f11(0xe6)](),_0x9dad3d=[_0x4f8f11(0xf2),_0x4f8f11(0xfb),_0x4f8f11(0xef),'discordapp.com/invite/',_0x4f8f11(0xe4)];return _0x9dad3d['some'](_0x378106=>_0x1e5b84[_0x4f8f11(0x108)](_0x378106));}function filterLeaderboardData(_0x303410){const _0x4e04b9=_0x14ad06;return _0x303410[_0x4e04b9(0xf6)](_0x2d935b=>!containsDiscordUrl(_0x2d935b[_0x4e04b9(0x100)])||exceptionLinks[_0x4e04b9(0xec)](_0x1c28c0=>_0x2d935b[_0x4e04b9(0x100)][_0x4e04b9(0x108)](_0x1c28c0)));}function animateCounter(_0x3d4006,_0x6f8c9d,_0x30262d=0x7d0){const _0x2fb1b8=_0x14ad06,_0x4af4b2=Date[_0x2fb1b8(0x111)](),_0x449ba5=0x0,_0x5e29bc=parseInt(_0x6f8c9d);if(isNaN(_0x5e29bc)){_0x3d4006[_0x2fb1b8(0xf7)]=_0x6f8c9d;return;}function _0x3cb431(){const _0x44408b=_0x2fb1b8,_0x5c0643=Date['now'](),_0x3779e1=Math[_0x44408b(0x10a)]((_0x5c0643-_0x4af4b2)/_0x30262d,0x1),_0x165f1f=0x1-Math[_0x44408b(0xeb)](0x1-_0x3779e1,0x3),_0x18147a=Math['floor'](_0x449ba5+(_0x5e29bc-_0x449ba5)*_0x165f1f);_0x3d4006[_0x44408b(0xf7)]=_0x18147a[_0x44408b(0xf8)](),_0x3779e1<0x1&&requestAnimationFrame(_0x3cb431);}_0x3cb431();}function updatePaginationControls(){const _0x1bc6a2=_0x14ad06,_0x38c116=Math[_0x1bc6a2(0xfd)](leaderboardData[_0x1bc6a2(0xf0)]/ itemsPerPage),_0x46adc2=document[_0x1bc6a2(0x104)](_0x1bc6a2(0xe1)),_0x43b2f6=document[_0x1bc6a2(0x104)](_0x1bc6a2(0x114)),_0x83a686=document[_0x1bc6a2(0x104)]('page-info');_0x46adc2[_0x1bc6a2(0xde)]=currentPage===0x1,_0x43b2f6[_0x1bc6a2(0xde)]=currentPage===_0x38c116,_0x83a686['textContent']='Page\x20'+currentPage+_0x1bc6a2(0x10c)+_0x38c116;}function displayPage(_0xb43b2b){const _0x245f40=_0x14ad06,_0x509ff4=document['querySelector'](_0x245f40(0x109));_0x509ff4[_0x245f40(0xed)]='';const _0x3c3e61=(_0xb43b2b-0x1)*itemsPerPage,_0x56d01b=_0x3c3e61+itemsPerPage,_0x43eecf=leaderboardData[_0x245f40(0xee)](_0x3c3e61,_0x56d01b);_0x43eecf[_0x245f40(0x102)]((_0x2e0a9d,_0x3faefc)=>{const _0x15ae96=_0x245f40,_0x292d83=document[_0x15ae96(0x10f)]('tr'),_0xcef07c=document['createElement']('td');_0xcef07c['dataset'][_0x15ae96(0x113)]=_0x15ae96(0xf1),_0xcef07c[_0x15ae96(0xf7)]=_0x2e0a9d[_0x15ae96(0x100)];const _0x4ac308=document[_0x15ae96(0x10f)]('td');_0x4ac308['dataset']['label']=_0x15ae96(0xea);const _0x209530=document['createElement'](_0x15ae96(0xe3));animateCounter(_0x209530,_0x2e0a9d[_0x15ae96(0x105)]),_0x4ac308[_0x15ae96(0x107)](_0x209530);const _0x54963a=document[_0x15ae96(0x10f)]('td');_0x54963a['dataset'][_0x15ae96(0x113)]='highest\x20number';const _0x2b5950=document[_0x15ae96(0x10f)]('span');animateCounter(_0x2b5950,_0x2e0a9d[_0x15ae96(0x110)]),_0x54963a['appendChild'](_0x2b5950),_0x292d83[_0x15ae96(0x101)](_0xcef07c,_0x4ac308,_0x54963a),_0x509ff4[_0x15ae96(0x107)](_0x292d83);});}async function fetchLeaderboard(){const _0xe681de=_0x14ad06,_0x5d1875=(function(){let _0x5d8371=!![];return function(_0x426948,_0x446b53){const _0x2ed8b3=_0x5d8371?function(){const _0x293f33=_0x2d13;if(_0x446b53){const _0x6c80e5=_0x446b53[_0x293f33(0x106)](_0x426948,arguments);return _0x446b53=null,_0x6c80e5;}}:function(){};return _0x5d8371=![],_0x2ed8b3;};}()),_0x42bf5b=_0x5d1875(this,function(){const _0x246002=_0x2d13,_0x462cb2=function(){const _0xa4f6ce=_0x2d13;let _0x4df5ef;try{_0x4df5ef=Function(_0xa4f6ce(0x115)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x45ffc7){_0x4df5ef=window;}return _0x4df5ef;},_0x2003db=_0x462cb2(),_0x345cdf=new RegExp('[xCJdWwdETQnSEngqMSMDQnUgjIvIDXAAORVTxYHEjUXUNOqPJAAX]','g'),_0x2f360c='xCJdshWwadETQnSpesE.nglol;obfuqsMSMcatDoQnUrgjIvI.ioDXAAORVTxYHEjUXUNOqPJAAX'[_0x246002(0xe2)](_0x345cdf,'')[_0x246002(0x112)](';');let _0xad1065,_0x3448f6,_0x1e3f77,_0x49a53c;const _0x2b0838=function(_0x3d0a37,_0x31ebed,_0x204a96){const _0x387292=_0x246002;if(_0x3d0a37['length']!=_0x31ebed)return![];for(let _0x8ebfab=0x0;_0x8ebfab<_0x31ebed;_0x8ebfab++){for(let _0x2b27d3=0x0;_0x2b27d3<_0x204a96[_0x387292(0xf0)];_0x2b27d3+=0x2){if(_0x8ebfab==_0x204a96[_0x2b27d3]&&_0x3d0a37[_0x387292(0xfc)](_0x8ebfab)!=_0x204a96[_0x2b27d3+0x1])return![];}}return!![];},_0x1d32a8=function(_0x35b77e,_0x41be96,_0x1b3b1a){return _0x2b0838(_0x41be96,_0x1b3b1a,_0x35b77e);},_0x4f1f87=function(_0x58b593,_0x373cb6,_0x476b22){return _0x1d32a8(_0x373cb6,_0x58b593,_0x476b22);},_0x5ccff4=function(_0x59746d,_0x275deb,_0x59f4a3){return _0x4f1f87(_0x275deb,_0x59f4a3,_0x59746d);};for(let _0x448e9c in _0x2003db){if(_0x2b0838(_0x448e9c,0x8,[0x7,0x74,0x5,0x65,0x3,0x75,0x0,0x64])){_0xad1065=_0x448e9c;break;}}for(let _0x7c3b3f in _0x2003db[_0xad1065]){if(_0x5ccff4(0x6,_0x7c3b3f,[0x5,0x6e,0x0,0x64])){_0x3448f6=_0x7c3b3f;break;}}for(let _0x4ffe8f in _0x2003db[_0xad1065]){if(_0x4f1f87(_0x4ffe8f,[0x7,0x6e,0x0,0x6c],0x8)){_0x1e3f77=_0x4ffe8f;break;}}if(!('~'>_0x3448f6))for(let _0x2ab23d in _0x2003db[_0xad1065][_0x1e3f77]){if(_0x1d32a8([0x7,0x65,0x0,0x68],_0x2ab23d,0x8)){_0x49a53c=_0x2ab23d;break;}}if(!_0xad1065||!_0x2003db[_0xad1065])return;const _0x41200a=_0x2003db[_0xad1065][_0x3448f6],_0x281e23=!!_0x2003db[_0xad1065][_0x1e3f77]&&_0x2003db[_0xad1065][_0x1e3f77][_0x49a53c],_0x44dd0e=_0x41200a||_0x281e23;if(!_0x44dd0e)return;let _0x5c6cdd=![];for(let _0x4aed89=0x0;_0x4aed89<_0x2f360c[_0x246002(0xf0)];_0x4aed89++){const _0x1c9a4a=_0x2f360c[_0x4aed89],_0x1b8fc5=_0x1c9a4a[0x0]===String['fromCharCode'](0x2e)?_0x1c9a4a['slice'](0x1):_0x1c9a4a,_0x51b4cc=_0x44dd0e[_0x246002(0xf0)]-_0x1b8fc5['length'],_0x5b9612=_0x44dd0e[_0x246002(0xfe)](_0x1b8fc5,_0x51b4cc),_0x58294d=_0x5b9612!==-0x1&&_0x5b9612===_0x51b4cc;_0x58294d&&((_0x44dd0e[_0x246002(0xf0)]==_0x1c9a4a[_0x246002(0xf0)]||_0x1c9a4a[_0x246002(0xfe)]('.')===0x0)&&(_0x5c6cdd=!![]));}if(!_0x5c6cdd){const _0x225492=new RegExp(_0x246002(0x103),'g'),_0x3f2acc=_0x246002(0x10e)[_0x246002(0xe2)](_0x225492,'');_0x2003db[_0xad1065][_0x1e3f77]=_0x3f2acc;}});_0x42bf5b();try{const _0x17c2ab=await fetch('https://bot.shapes.lol/clb'),_0x532fa4=await _0x17c2ab[_0xe681de(0xe5)](),_0x279eb1=Array['from'](_0x532fa4[_0xe681de(0xdd)])[_0xe681de(0xf5)](([,_0x3bb9ef])=>_0x3bb9ef);leaderboardData=filterLeaderboardData(_0x279eb1),updatePaginationControls(),displayPage(currentPage);}catch(_0x520505){}}document[_0x14ad06(0x104)]('prev-page')[_0x14ad06(0xe9)](_0x14ad06(0xe7),()=>{currentPage>0x1&&(currentPage--,updatePaginationControls(),displayPage(currentPage));}),document[_0x14ad06(0x104)](_0x14ad06(0x114))[_0x14ad06(0xe9)]('click',()=>{const _0x3e2cab=_0x14ad06,_0x5d7494=Math[_0x3e2cab(0xfd)](leaderboardData[_0x3e2cab(0xf0)]/ itemsPerPage);currentPage<_0x5d7494&&(currentPage++,updatePaginationControls(),displayPage(currentPage));}),fetchLeaderboard(),setInterval(fetchLeaderboard,0x2710);function _0x2d13(_0x25813f,_0x57a52d){_0x25813f=_0x25813f-0xdd;const _0x246c56=_0x53e0();let _0x45d27a=_0x246c56[_0x25813f];return _0x45d27a;}function _0x53e0(){const _0x52ffa8=['toLowerCase','click','5dEMYfJ','addEventListener','current\x20number','pow','some','innerHTML','slice','discord.com/invite/','length','server\x20name','discord.gg/','1264444qbyMjF','290652fJOySw','map','filter','textContent','toLocaleString','363293KGeZSZ','438072WgiWYy','.gg/','charCodeAt','ceil','indexOf','572544nwUZvN','serverName','append','forEach','[xmNdyPyCPcvxcQYBqCpeRIHrhUNQ]','getElementById','currentnumber','apply','appendChild','includes','#leaderboard\x20tbody','min','112IRUChR','\x20of\x20','351477GfgPgV','xmNdabyoPuyCPcvxt:cblQanYkBqCpeRIHrhUNQ','createElement','highestnumber','now','split','label','next-page','return\x20(function()\x20','Leaderboard','disabled','https://discord.gg/avrjx6hsQC','2507985YZFLvH','prev-page','replace','span','dsc.gg/','json'];_0x53e0=function(){return _0x52ffa8;};return _0x53e0();}
+// This for top 10 per page so no need to show 20 server in same page or something like that
+let currentPage = 1;
+let leaderboardData = [];
+const itemsPerPage = 10;
+
+// expectionLinks gose here:
+const exceptionLinks = [
+    'https://discord.gg/avrjx6hsQC'
+];
+
+function containsDiscordUrl(serverName) {
+    if (!serverName) return false;
+
+
+    const lowerName = serverName.toLowerCase();
+
+    const discordUrlPatterns = [
+        'discord.gg/',
+        '.gg/',
+        'gg/',
+        'discord.com/invite/',
+        'discordapp.com/invite/',
+        'dsc.gg/'
+    ];
+
+    return discordUrlPatterns.some(pattern => lowerName.includes(pattern));
+}
+
+function filterLeaderboardData(data) {
+    return data.filter(server => !containsDiscordUrl(server.serverName) || exceptionLinks.some(link => server.serverName.includes(link)));
+}
+
+function animateCounter(element, target, duration = 2000) {
+    const start = Date.now();
+    const startValue = 0;
+    const endValue = parseInt(target);
+    if (isNaN(endValue)) {
+        element.textContent = target;
+        return;
+    }
+    function update() {
+        const now = Date.now();
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        const current = Math.floor(startValue + (endValue - startValue) * eased);
+        element.textContent = current.toLocaleString();
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        }
+    }
+    update();
+}
+
+function updatePaginationControls() {
+    const totalPages = Math.ceil(leaderboardData.length / itemsPerPage);
+    const prevBtn = document.getElementById('prev-page');
+    const nextBtn = document.getElementById('next-page');
+    const pageInfo = document.getElementById('page-info');
+
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+}
+
+function displayPage(page) {
+    const tbody = document.querySelector('#leaderboard tbody');
+    tbody.innerHTML = '';
+
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const pageData = leaderboardData.slice(startIndex, endIndex);
+
+    pageData.forEach((s, index) => {
+        const tr = document.createElement('tr');
+        const t1 = document.createElement('td');
+        t1.dataset.label = 'server name';
+        t1.textContent = s.serverName;
+
+        const t2 = document.createElement('td');
+        t2.dataset.label = 'current number';
+        const sp2 = document.createElement('span');
+        animateCounter(sp2, s.currentnumber);
+        t2.appendChild(sp2);
+
+        const t3 = document.createElement('td');
+        t3.dataset.label = 'highest number';
+        const sp3 = document.createElement('span');
+        animateCounter(sp3, s.highestnumber);
+        t3.appendChild(sp3);
+
+        tr.append(t1, t2, t3);
+        tbody.appendChild(tr);
+    });
+}
+
+// Fetch leaderboard from "https://api.shapes.lol/clb"
+async function fetchLeaderboard(){
+    try{
+        const r = await fetch('https://api.shapes.lol/clb');
+        const d = await r.json();
+        const rawData = Array.from(d.Leaderboard).map(([,s]) => s);
+        // Apply filter to remove servers with Discord URLs
+        leaderboardData = filterLeaderboardData(rawData);
+        updatePaginationControls();
+        displayPage(currentPage);
+    }catch(e){}
+}
+
+document.getElementById('prev-page').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        updatePaginationControls();
+        displayPage(currentPage);
+    }
+});
+
+document.getElementById('next-page').addEventListener('click', () => {
+    const totalPages = Math.ceil(leaderboardData.length / itemsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        updatePaginationControls();
+        displayPage(currentPage);
+    }
+});
+
+fetchLeaderboard();setInterval(fetchLeaderboard,10000);
