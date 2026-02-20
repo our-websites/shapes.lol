@@ -95,7 +95,7 @@ const fetchLeaderboard = async () => {
     try {
         const response = await fetch('https://api.spook.bio/profiles');
         const data = await response.json();
-        displayTopThree(data);
+        //displayTopThree(data);
     } catch (error) {
         console.error('Failed to fetch leaderboard:', error);
     }
