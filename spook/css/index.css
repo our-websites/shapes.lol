@@ -434,7 +434,7 @@ a, button {
     padding: 18px;
   }
 
-  .card-server-name {
+  .card-user-name {
     font-size: 15px;
   }
 
@@ -596,14 +596,11 @@ a, button {
       gap: 16px;
     }
 
-    .leaderboard-card:nth-child(1) {
-    }
+    .leaderboard-card:nth-child(1) {}
 
-    .leaderboard-card:nth-child(2) {
-    }
+    .leaderboard-card:nth-child(2) {}
 
-    .leaderboard-card:nth-child(3) {
-    }
+    .leaderboard-card:nth-child(3) {}
 
     .leaderboard-card::before {
       content: '';
@@ -664,7 +661,7 @@ a, button {
       flex: 1;
     }
 
-    .card-server-name {
+    .card-user-name {
       font-size: 16px;
       font-weight: 600;
       color: var(--white);
