@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Leaderboard</title>
+    <link rel="stylesheet" href="https://our-websites.github.io/shapes.lol/assets/css/counting-lb.css">
+    <link rel="icon" type="image/png" href="https://our-websites.github.io/cdn.shapes.lol/shapes/favicon.ico">
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#111111">
+    <meta property="og:image" content="https://our-websites.github.io/cdn.shapes.lol/shapes/logosmall.png" />
+    <meta property="og:title" content="Shapes - Counting Leaderboard">
+    <meta property="og:description" content="A counting leaderboard pages for shapes bot, View now top servers in counting-lb.">
+</head>
+<body>
+    <div class="leaderboard-container">
+        <h1>Counting Leaderboard</h1>
+        <div class="pagination-controls">
+            <button id="prev-page" class="nav-button" disabled>&larr; Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page" class="nav-button">&rarr; Next</button>
+        </div>
+    <table id="leaderboard">
+      <thead>
+        <tr>
+          <th>Server name</th>
+          <th>Current number</th>
+          <th>Highest number</th>
+        </tr>
+      </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://our-websites.github.io/shapes.lol/assets/js/yapin-counting-lb.js"></script>
+</body>
+</html>
