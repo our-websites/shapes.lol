@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands</title>
+    <link rel="stylesheet" href="https://our-websites.github.io/shapes.lol/assets/css/command-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://our-websites.github.io/cdn.shapes.lol/shapes/favicon.ico">
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#111111">
+    <meta property="og:image" content="https://our-websites.github.io/cdn.shapes.lol/shapes/logosmall.png" />
+    <meta property="og:title" content="Shapes - Commands">
+    <meta property="og:description" content="Commands list pages, View all commands of shapes.">
+</head>
+<body>
+    <div id="command-container">
+        <h1>Command List</h1>
+        <div class="pagination-controls">
+            <button id="prev-page" class="nav-button" disabled>&larr; Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page" class="nav-button">&rarr; Next</button>
+        </div>
+        <div id="commands" class="commands-grid">
+            <!-- Individual command cards will be inserted here -->
+        </div>
+        <template id="command-template">
+            <div class="command-card">
+                <h2 class="command-name">Command Name</h2>
+                <p class="command-description">Command Description</p>
+                <p class="command-type">Command Type</p>
+            </div>
+        </template>
+    </div>
+    <script src="https://our-websites.github.io/shapes.lol/assets/js/yapin-command-list.js" async></script>
+</body>
+</html>
