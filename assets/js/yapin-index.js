@@ -8,6 +8,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Server Redirect
+const p= new URLSearchParams(window.location.search);
+
+if (p.get('s') === 'true') {
+  window.location.replace('https://yapin.gg/invite/shapes');
+  return;
+}
+
+
 // Counting leaderboard fetch
 const animateCounter = (element, target, duration = 1500) => {
     const start = Date.now();
