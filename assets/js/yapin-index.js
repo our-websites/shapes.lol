@@ -9,11 +9,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Server Redirect
-const p= new URLSearchParams(window.location.search);
+const p = new URLSearchParams(window.location.search);
 
 if (p.get('s') === 'true') {
-  window.location.replace('https://yapin.gg/invite/shapes');
-  return;
+  window.location.replace('https://www.yapin.gg/invite/shapes');
 }
 
 
